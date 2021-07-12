@@ -11,5 +11,6 @@ namespace DJanel.Muebles.DataAccess.Contracts.Entities
         public DateTime Fecha_Nac { get; set; }
         public string Domicilio { get; set; }
         public string Telefono { get; set; }
+        public int Resultado { get; set; }
     }
 }

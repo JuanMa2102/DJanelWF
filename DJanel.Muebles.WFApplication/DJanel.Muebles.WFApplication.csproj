@@ -114,7 +114,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session\CurrentSession.cs" />
+    <Compile Include="Validations\ClienteValidator.cs" />
     <Compile Include="Validations\LoginValidator.cs" />
+    <Compile Include="Validations\ProductoValidator.cs" />
     <Compile Include="Validations\ProveedorValidator.cs" />
     <Compile Include="Validations\UsuarioValidator.cs" />
     <EmbeddedResource Include="Forms\Clientes\FrmCliente.resx">

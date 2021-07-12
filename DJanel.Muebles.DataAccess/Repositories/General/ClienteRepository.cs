@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace DJanel.Muebles.DataAccess.Repositories.General
 {
-    public class ProveedorRepository : Repository, IProveedorRepository
+    public class ClienteRepository : Repository, IClienteRepository
     {
-        public async Task<Proveedor> AddAsync(Proveedor element, object IdUsuario)
+        public async Task<Cliente> AddAsync(Cliente element, object IdUsuario)
         {
             try
             {
@@ -20,12 +20,14 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
                 {
                     conexion.Open();
                     var dynamicParameters = new DynamicParameters();
-                    dynamicParameters.Add("@Nombre_Empresa", element.Nombre_Empresa);
-                    dynamicParameters.Add("@Nombre_Propietario", element.Nombre_Propietario);
-                    dynamicParameters.Add("@Domicilio", element.Domicilio);
+                    dynamicParameters.Add("@Nombre", element.Nombre);
+                    dynamicParameters.Add("@Apellido_Pat", element.Apellido_Pat);
+                    dynamicParameters.Add("@Apellido_Mat", element.Apellido_Mat);
                     dynamicParameters.Add("@Telefono", element.Telefono);
+                    dynamicParameters.Add("@Domicilio", element.Domicilio);
+                    dynamicParameters.Add("@Fecha_Nac", element.Fecha_Nac);
                     dynamicParameters.Add("@Usuario", IdUsuario);
-                    var result = await conexion.ExecuteScalarAsync<int>("[Proveedor].[DJanel_Create_Proveedor]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+                    var result = await conexion.ExecuteScalarAsync<int>("[Cliente].[DJanel_Create_Cliente]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
                     element.Resultado = result;
 
                     return element;
@@ -47,9 +49,9 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
 
                     conexion.Open();
                     var dynamicParameters = new DynamicParameters();
-                    dynamicParameters.Add("@IdProveedor", id);
+                    dynamicParameters.Add("@IdCliente", id);
                     dynamicParameters.Add("@Usuario", IdUsuario);
-                    var result = await conexion.ExecuteScalarAsync<int>("[Proveedor].[DJanel_Delete_Proveedor]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+                    var result = await conexion.ExecuteScalarAsync<int>("[Cliente].[DJanel_Delete_Cliente]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
 
                     return result;
 
@@ -61,7 +63,8 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
                 throw;
             }
         }
-        public async Task<IEnumerable<Proveedor>> GetAllAsync()
+
+        public async Task<IEnumerable<Cliente>> GetAllAsync()
         {
             try
             {
@@ -69,7 +72,7 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
                 {
                     conexion.Open();
                     var dynamicParameters = new DynamicParameters();
-                    var result = await conexion.QueryAsync<Proveedor>("[Proveedor].[DJanel_GetAll_Proveedores]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+                    var result = await conexion.QueryAsync<Cliente>("[Cliente].[DJanel_GetAll_Clientes]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
 
                     return result;
                 }
@@ -81,7 +84,7 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
             }
         }
 
-        public async Task<Proveedor> UpdateAsync(Proveedor element, object IdUsuario)
+        public async Task<Cliente> UpdateAsync(Cliente element, object IdUsuario)
         {
             try
             {
@@ -89,13 +92,15 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
                 {
                     conexion.Open();
                     var dynamicParameters = new DynamicParameters();
-                    dynamicParameters.Add("@IdProveedor", element.IdProveedor);
-                    dynamicParameters.Add("@Nombre_Empresa", element.Nombre_Empresa);
-                    dynamicParameters.Add("@Nombre_Propietario", element.Nombre_Propietario);
-                    dynamicParameters.Add("@Domicilio", element.Domicilio);
+                    dynamicParameters.Add("@IdCliente", element.IdCliente);
+                    dynamicParameters.Add("@Nombre", element.Nombre);
+                    dynamicParameters.Add("@Apellido_Pat", element.Apellido_Pat);
+                    dynamicParameters.Add("@Apellido_Mat", element.Apellido_Mat);
                     dynamicParameters.Add("@Telefono", element.Telefono);
+                    dynamicParameters.Add("@Domicilio", element.Domicilio);
+                    dynamicParameters.Add("@Fecha_Nac", element.Fecha_Nac);
                     dynamicParameters.Add("@Usuario", IdUsuario);
-                    var result = await conexion.ExecuteScalarAsync<int>("[Proveedor].[DJanel_Update_Proveedor]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+                    var result = await conexion.ExecuteScalarAsync<int>("[Cliente].[DJanel_Update_Cliente]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
                     element.Resultado = result;
 
                     return element;
@@ -108,7 +113,7 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
             }
         }
 
-        public Task<Proveedor> GetAsync(object id)
+        public Task<Cliente> GetAsync(object id)
         {
             throw new System.NotImplementedException();
         }
@@ -117,6 +122,6 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
         {
             throw new System.NotImplementedException();
         }
-
+        
     }
 }

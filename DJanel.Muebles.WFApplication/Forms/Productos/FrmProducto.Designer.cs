@@ -30,14 +30,14 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn1 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn2 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn3 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn9 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn10 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn11 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn12 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn13 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn14 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn15 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn16 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.UsuarioFLButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnNuevo = new System.Windows.Forms.Button();
@@ -48,31 +48,31 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.GBoxFormulario = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.DomicilioControl = new System.Windows.Forms.TextBox();
+            this.ModeloControl = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.TelefonoControl = new System.Windows.Forms.TextBox();
+            this.MarcaControl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.Apellido_PatControl = new System.Windows.Forms.TextBox();
+            this.DescripcionControl = new System.Windows.Forms.TextBox();
             this.NombreControl = new System.Windows.Forms.TextBox();
-            this.Apellido_MatControl = new System.Windows.Forms.TextBox();
-            this.UsernameControl = new System.Windows.Forms.TextBox();
+            this.ClaveBusquedaControl = new System.Windows.Forms.TextBox();
             this.UsuarioGridPanel = new System.Windows.Forms.Panel();
             this.UsuarioConteiner = new System.Windows.Forms.Panel();
             this.UsuarioContainerGrid = new System.Windows.Forms.Panel();
             this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.UsuarioContainerAC = new System.Windows.Forms.Panel();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.PrecioControl = new Syncfusion.WinForms.Input.SfNumericTextBox();
+            this.StockControl = new Syncfusion.WinForms.Input.SfNumericTextBox();
             this.panel4.SuspendLayout();
             this.UsuarioFLButtons.SuspendLayout();
             this.UsuarioACPanel.SuspendLayout();
@@ -119,6 +119,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.BtnNuevo.TabIndex = 15;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = false;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
             // BtnModificar
             // 
@@ -132,6 +133,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.BtnModificar.TabIndex = 14;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnEliminar
             // 
@@ -145,6 +147,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.BtnEliminar.TabIndex = 13;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnGuardar
             // 
@@ -158,6 +161,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.BtnGuardar.TabIndex = 12;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // UsuarioACPanel
             // 
@@ -171,27 +175,27 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             // 
             // GBoxFormulario
             // 
+            this.GBoxFormulario.Controls.Add(this.StockControl);
+            this.GBoxFormulario.Controls.Add(this.PrecioControl);
             this.GBoxFormulario.Controls.Add(this.label1);
             this.GBoxFormulario.Controls.Add(this.panel1);
-            this.GBoxFormulario.Controls.Add(this.textBox1);
             this.GBoxFormulario.Controls.Add(this.panel3);
             this.GBoxFormulario.Controls.Add(this.panel2);
             this.GBoxFormulario.Controls.Add(this.label7);
             this.GBoxFormulario.Controls.Add(this.label2);
             this.GBoxFormulario.Controls.Add(this.panel10);
             this.GBoxFormulario.Controls.Add(this.label3);
-            this.GBoxFormulario.Controls.Add(this.DomicilioControl);
+            this.GBoxFormulario.Controls.Add(this.ModeloControl);
             this.GBoxFormulario.Controls.Add(this.label6);
             this.GBoxFormulario.Controls.Add(this.panel7);
             this.GBoxFormulario.Controls.Add(this.panel9);
             this.GBoxFormulario.Controls.Add(this.label4);
-            this.GBoxFormulario.Controls.Add(this.TelefonoControl);
+            this.GBoxFormulario.Controls.Add(this.MarcaControl);
             this.GBoxFormulario.Controls.Add(this.label5);
             this.GBoxFormulario.Controls.Add(this.panel8);
-            this.GBoxFormulario.Controls.Add(this.Apellido_PatControl);
+            this.GBoxFormulario.Controls.Add(this.DescripcionControl);
             this.GBoxFormulario.Controls.Add(this.NombreControl);
-            this.GBoxFormulario.Controls.Add(this.Apellido_MatControl);
-            this.GBoxFormulario.Controls.Add(this.UsernameControl);
+            this.GBoxFormulario.Controls.Add(this.ClaveBusquedaControl);
             this.GBoxFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GBoxFormulario.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
             this.GBoxFormulario.Location = new System.Drawing.Point(10, 0);
@@ -219,18 +223,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 2);
             this.panel1.TabIndex = 34;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(40, 357);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 27);
-            this.textBox1.TabIndex = 33;
             // 
             // panel3
             // 
@@ -286,17 +278,17 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.label3.TabIndex = 16;
             this.label3.Text = "Clave para busqueda rapida";
             // 
-            // DomicilioControl
+            // ModeloControl
             // 
-            this.DomicilioControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DomicilioControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.DomicilioControl.ForeColor = System.Drawing.Color.Black;
-            this.DomicilioControl.Location = new System.Drawing.Point(385, 169);
-            this.DomicilioControl.MaxLength = 100;
-            this.DomicilioControl.Multiline = true;
-            this.DomicilioControl.Name = "DomicilioControl";
-            this.DomicilioControl.Size = new System.Drawing.Size(221, 27);
-            this.DomicilioControl.TabIndex = 26;
+            this.ModeloControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ModeloControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.ModeloControl.ForeColor = System.Drawing.Color.Black;
+            this.ModeloControl.Location = new System.Drawing.Point(385, 169);
+            this.ModeloControl.MaxLength = 100;
+            this.ModeloControl.Multiline = true;
+            this.ModeloControl.Name = "ModeloControl";
+            this.ModeloControl.Size = new System.Drawing.Size(221, 27);
+            this.ModeloControl.TabIndex = 26;
             // 
             // label6
             // 
@@ -334,17 +326,17 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.label4.TabIndex = 19;
             this.label4.Text = "Descripción";
             // 
-            // TelefonoControl
+            // MarcaControl
             // 
-            this.TelefonoControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TelefonoControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.TelefonoControl.ForeColor = System.Drawing.Color.Black;
-            this.TelefonoControl.Location = new System.Drawing.Point(383, 77);
-            this.TelefonoControl.MaxLength = 100;
-            this.TelefonoControl.Multiline = true;
-            this.TelefonoControl.Name = "TelefonoControl";
-            this.TelefonoControl.Size = new System.Drawing.Size(221, 27);
-            this.TelefonoControl.TabIndex = 23;
+            this.MarcaControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MarcaControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.MarcaControl.ForeColor = System.Drawing.Color.Black;
+            this.MarcaControl.Location = new System.Drawing.Point(383, 77);
+            this.MarcaControl.MaxLength = 100;
+            this.MarcaControl.Multiline = true;
+            this.MarcaControl.Name = "MarcaControl";
+            this.MarcaControl.Size = new System.Drawing.Size(221, 27);
+            this.MarcaControl.TabIndex = 23;
             // 
             // label5
             // 
@@ -364,17 +356,17 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.panel8.Size = new System.Drawing.Size(229, 2);
             this.panel8.TabIndex = 21;
             // 
-            // Apellido_PatControl
+            // DescripcionControl
             // 
-            this.Apellido_PatControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Apellido_PatControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.Apellido_PatControl.ForeColor = System.Drawing.Color.Black;
-            this.Apellido_PatControl.Location = new System.Drawing.Point(40, 169);
-            this.Apellido_PatControl.MaxLength = 100;
-            this.Apellido_PatControl.Multiline = true;
-            this.Apellido_PatControl.Name = "Apellido_PatControl";
-            this.Apellido_PatControl.Size = new System.Drawing.Size(221, 27);
-            this.Apellido_PatControl.TabIndex = 17;
+            this.DescripcionControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DescripcionControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.DescripcionControl.ForeColor = System.Drawing.Color.Black;
+            this.DescripcionControl.Location = new System.Drawing.Point(40, 169);
+            this.DescripcionControl.MaxLength = 100;
+            this.DescripcionControl.Multiline = true;
+            this.DescripcionControl.Name = "DescripcionControl";
+            this.DescripcionControl.Size = new System.Drawing.Size(221, 27);
+            this.DescripcionControl.TabIndex = 17;
             // 
             // NombreControl
             // 
@@ -388,29 +380,17 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.NombreControl.Size = new System.Drawing.Size(221, 27);
             this.NombreControl.TabIndex = 10;
             // 
-            // Apellido_MatControl
+            // ClaveBusquedaControl
             // 
-            this.Apellido_MatControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Apellido_MatControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.Apellido_MatControl.ForeColor = System.Drawing.Color.Black;
-            this.Apellido_MatControl.Location = new System.Drawing.Point(43, 266);
-            this.Apellido_MatControl.MaxLength = 100;
-            this.Apellido_MatControl.Multiline = true;
-            this.Apellido_MatControl.Name = "Apellido_MatControl";
-            this.Apellido_MatControl.Size = new System.Drawing.Size(221, 27);
-            this.Apellido_MatControl.TabIndex = 20;
-            // 
-            // UsernameControl
-            // 
-            this.UsernameControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UsernameControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.UsernameControl.ForeColor = System.Drawing.Color.Black;
-            this.UsernameControl.Location = new System.Drawing.Point(385, 266);
-            this.UsernameControl.MaxLength = 100;
-            this.UsernameControl.Multiline = true;
-            this.UsernameControl.Name = "UsernameControl";
-            this.UsernameControl.Size = new System.Drawing.Size(221, 27);
-            this.UsernameControl.TabIndex = 32;
+            this.ClaveBusquedaControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ClaveBusquedaControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.ClaveBusquedaControl.ForeColor = System.Drawing.Color.Black;
+            this.ClaveBusquedaControl.Location = new System.Drawing.Point(385, 266);
+            this.ClaveBusquedaControl.MaxLength = 100;
+            this.ClaveBusquedaControl.Multiline = true;
+            this.ClaveBusquedaControl.Name = "ClaveBusquedaControl";
+            this.ClaveBusquedaControl.Size = new System.Drawing.Size(221, 27);
+            this.ClaveBusquedaControl.TabIndex = 32;
             // 
             // UsuarioGridPanel
             // 
@@ -447,42 +427,42 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.DataGrid.AccessibleName = "Table";
             this.DataGrid.AllowEditing = false;
             this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn1.AllowEditing = false;
-            gridTextColumn1.HeaderText = "IdProducto";
-            gridTextColumn1.MappingName = "IdProducto";
-            gridTextColumn1.Visible = false;
-            gridTextColumn2.AllowEditing = false;
-            gridTextColumn2.AllowResizing = true;
-            gridTextColumn2.HeaderText = "Nombre";
-            gridTextColumn2.MappingName = "Nombre";
-            gridTextColumn3.AllowEditing = false;
-            gridTextColumn3.AllowResizing = true;
-            gridTextColumn3.HeaderText = "Descripción";
-            gridTextColumn3.MappingName = "Descripcion";
-            gridTextColumn4.AllowEditing = false;
-            gridTextColumn4.AllowResizing = true;
-            gridTextColumn4.HeaderText = "Cantidad en almacen";
-            gridTextColumn4.MappingName = "Stock";
-            gridTextColumn5.AllowEditing = false;
-            gridTextColumn5.HeaderText = "Precio";
-            gridTextColumn5.MappingName = "Precio";
-            gridTextColumn6.AllowEditing = false;
-            gridTextColumn6.HeaderText = "Marca";
-            gridTextColumn6.MappingName = "Marca";
-            gridTextColumn7.AllowEditing = false;
-            gridTextColumn7.HeaderText = "Modelo";
-            gridTextColumn7.MappingName = "Modelo";
-            gridTextColumn8.AllowEditing = false;
-            gridTextColumn8.HeaderText = "Clave";
-            gridTextColumn8.MappingName = "Clave";
-            this.DataGrid.Columns.Add(gridTextColumn1);
-            this.DataGrid.Columns.Add(gridTextColumn2);
-            this.DataGrid.Columns.Add(gridTextColumn3);
-            this.DataGrid.Columns.Add(gridTextColumn4);
-            this.DataGrid.Columns.Add(gridTextColumn5);
-            this.DataGrid.Columns.Add(gridTextColumn6);
-            this.DataGrid.Columns.Add(gridTextColumn7);
-            this.DataGrid.Columns.Add(gridTextColumn8);
+            gridTextColumn9.AllowEditing = false;
+            gridTextColumn9.HeaderText = "IdProducto";
+            gridTextColumn9.MappingName = "IdProducto";
+            gridTextColumn9.Visible = false;
+            gridTextColumn10.AllowEditing = false;
+            gridTextColumn10.AllowResizing = true;
+            gridTextColumn10.HeaderText = "Nombre";
+            gridTextColumn10.MappingName = "Nombre";
+            gridTextColumn11.AllowEditing = false;
+            gridTextColumn11.AllowResizing = true;
+            gridTextColumn11.HeaderText = "Descripción";
+            gridTextColumn11.MappingName = "Descripcion";
+            gridTextColumn12.AllowEditing = false;
+            gridTextColumn12.AllowResizing = true;
+            gridTextColumn12.HeaderText = "Cantidad en almacen";
+            gridTextColumn12.MappingName = "Stock";
+            gridTextColumn13.AllowEditing = false;
+            gridTextColumn13.HeaderText = "Precio";
+            gridTextColumn13.MappingName = "Precio";
+            gridTextColumn14.AllowEditing = false;
+            gridTextColumn14.HeaderText = "Marca";
+            gridTextColumn14.MappingName = "Marca";
+            gridTextColumn15.AllowEditing = false;
+            gridTextColumn15.HeaderText = "Modelo";
+            gridTextColumn15.MappingName = "Modelo";
+            gridTextColumn16.AllowEditing = false;
+            gridTextColumn16.HeaderText = "Clave";
+            gridTextColumn16.MappingName = "ClaveBusqueda";
+            this.DataGrid.Columns.Add(gridTextColumn9);
+            this.DataGrid.Columns.Add(gridTextColumn10);
+            this.DataGrid.Columns.Add(gridTextColumn11);
+            this.DataGrid.Columns.Add(gridTextColumn12);
+            this.DataGrid.Columns.Add(gridTextColumn13);
+            this.DataGrid.Columns.Add(gridTextColumn14);
+            this.DataGrid.Columns.Add(gridTextColumn15);
+            this.DataGrid.Columns.Add(gridTextColumn16);
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
             this.DataGrid.Location = new System.Drawing.Point(0, 10);
@@ -505,6 +485,39 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.errorProvider.BlinkRate = 50;
             this.errorProvider.ContainerControl = this;
             // 
+            // PrecioControl
+            // 
+            this.PrecioControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PrecioControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.PrecioControl.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.PrecioControl.Location = new System.Drawing.Point(39, 357);
+            this.PrecioControl.MaxLength = 10;
+            this.PrecioControl.MinValue = 0D;
+            this.PrecioControl.Name = "PrecioControl";
+            this.PrecioControl.Prefix = "$";
+            this.PrecioControl.Size = new System.Drawing.Size(100, 17);
+            this.PrecioControl.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.PrecioControl.TabIndex = 37;
+            this.PrecioControl.Text = "$ 0.00";
+            // 
+            // StockControl
+            // 
+            this.StockControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StockControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.StockControl.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.StockControl.HideTrailingZeros = true;
+            this.StockControl.Location = new System.Drawing.Point(39, 269);
+            this.StockControl.MaxLength = 10;
+            this.StockControl.MaxValue = 1000000D;
+            this.StockControl.MinValue = 0D;
+            this.StockControl.Name = "StockControl";
+            this.StockControl.Prefix = "";
+            this.StockControl.Size = new System.Drawing.Size(100, 17);
+            this.StockControl.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.StockControl.Suffix = "";
+            this.StockControl.TabIndex = 38;
+            this.StockControl.Text = "0";
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -516,6 +529,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmProducto";
             this.Text = "Usuario";
+            this.Shown += new System.EventHandler(this.FrmProducto_Shown);
             this.panel4.ResumeLayout(false);
             this.UsuarioFLButtons.ResumeLayout(false);
             this.UsuarioACPanel.ResumeLayout(false);
@@ -549,24 +563,24 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
         private System.Windows.Forms.GroupBox GBoxFormulario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox DomicilioControl;
+        private System.Windows.Forms.TextBox ModeloControl;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TelefonoControl;
+        private System.Windows.Forms.TextBox MarcaControl;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox Apellido_PatControl;
+        private System.Windows.Forms.TextBox DescripcionControl;
         private System.Windows.Forms.TextBox NombreControl;
-        private System.Windows.Forms.TextBox Apellido_MatControl;
-        private System.Windows.Forms.TextBox UsernameControl;
+        private System.Windows.Forms.TextBox ClaveBusquedaControl;
+        private Syncfusion.WinForms.Input.SfNumericTextBox StockControl;
+        private Syncfusion.WinForms.Input.SfNumericTextBox PrecioControl;
     }
 }

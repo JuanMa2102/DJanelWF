@@ -1,4 +1,6 @@
 ﻿using DJanel.Muebles.Business.Dependencies;
+using DJanel.Muebles.Business.ViewModels.Clientes;
+using DJanel.Muebles.Business.ViewModels.Productos;
 using DJanel.Muebles.Business.ViewModels.Proveedores;
 using DJanel.Muebles.Business.ViewModels.Usuarios;
 using DJanel.Muebles.CrossCutting.Services;
@@ -45,6 +47,8 @@ namespace DJanel.Muebles.WFApplication
             ServiceLocator.Instance.Register<UsuarioValidator, IValidator<UsuarioViewModel>>();
             ServiceLocator.Instance.Register<LoginValidator, IValidator<LoginViewModel>>();
             ServiceLocator.Instance.Register<ProveedorValidator, IValidator<ProveedorViewModel>>();
+            ServiceLocator.Instance.Register<ProductoValidator, IValidator<ProductoViewModel>>();
+            ServiceLocator.Instance.Register<ClienteValidator, IValidator<ClienteViewModel>>();
         }
 
         private static void RegisterViewModelDependencies()
@@ -53,6 +57,8 @@ namespace DJanel.Muebles.WFApplication
             ServiceLocator.Instance.Register<UsuarioViewModel>();
             ServiceLocator.Instance.Register<LoginViewModel>();
             ServiceLocator.Instance.Register<ProveedorViewModel>();
+            ServiceLocator.Instance.Register<ProductoViewModel>();
+            ServiceLocator.Instance.Register<ClienteViewModel>();
         }
     }
 }

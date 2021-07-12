@@ -89,6 +89,8 @@
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Base\IBaseRepository.cs" />
+    <Compile Include="Repositories\General\IClienteRepository.cs" />
+    <Compile Include="Repositories\General\IProductoRepository.cs" />
     <Compile Include="Repositories\General\IProveedorRepository.cs" />
     <Compile Include="Repositories\General\IRolRepository.cs" />
     <Compile Include="Repositories\General\IUsuarioRepository.cs" />

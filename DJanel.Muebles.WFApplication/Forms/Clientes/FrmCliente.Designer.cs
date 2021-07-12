@@ -30,11 +30,11 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn9 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn10 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn1 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn2 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn3 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.UsuarioFLButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnNuevo = new System.Windows.Forms.Button();
@@ -43,13 +43,14 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.UsuarioACPanel = new System.Windows.Forms.Panel();
             this.GBoxFormulario = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.DomicilioControl = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.DomicilioControl = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,10 +64,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.UsuarioContainerAC = new System.Windows.Forms.Panel();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.sfDateTimeEdit1 = new Syncfusion.WinForms.Input.SfDateTimeEdit();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Fecha_NacControl = new System.Windows.Forms.DateTimePicker();
+            this.TelefonoControl = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.UsuarioFLButtons.SuspendLayout();
             this.UsuarioACPanel.SuspendLayout();
@@ -113,6 +113,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnNuevo.TabIndex = 15;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = false;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
             // BtnModificar
             // 
@@ -126,6 +127,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnModificar.TabIndex = 14;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnEliminar
             // 
@@ -139,6 +141,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnEliminar.TabIndex = 13;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnGuardar
             // 
@@ -152,6 +155,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnGuardar.TabIndex = 12;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // UsuarioACPanel
             // 
@@ -165,16 +169,17 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             // 
             // GBoxFormulario
             // 
+            this.GBoxFormulario.Controls.Add(this.panel5);
+            this.GBoxFormulario.Controls.Add(this.TelefonoControl);
+            this.GBoxFormulario.Controls.Add(this.Fecha_NacControl);
             this.GBoxFormulario.Controls.Add(this.label3);
             this.GBoxFormulario.Controls.Add(this.panel3);
-            this.GBoxFormulario.Controls.Add(this.textBox1);
+            this.GBoxFormulario.Controls.Add(this.DomicilioControl);
             this.GBoxFormulario.Controls.Add(this.label1);
             this.GBoxFormulario.Controls.Add(this.panel1);
             this.GBoxFormulario.Controls.Add(this.panel2);
             this.GBoxFormulario.Controls.Add(this.label7);
             this.GBoxFormulario.Controls.Add(this.label2);
-            this.GBoxFormulario.Controls.Add(this.panel10);
-            this.GBoxFormulario.Controls.Add(this.DomicilioControl);
             this.GBoxFormulario.Controls.Add(this.panel7);
             this.GBoxFormulario.Controls.Add(this.label4);
             this.GBoxFormulario.Controls.Add(this.label5);
@@ -182,7 +187,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.GBoxFormulario.Controls.Add(this.Apellido_PatControl);
             this.GBoxFormulario.Controls.Add(this.NombreControl);
             this.GBoxFormulario.Controls.Add(this.Apellido_MatControl);
-            this.GBoxFormulario.Controls.Add(this.sfDateTimeEdit1);
             this.GBoxFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GBoxFormulario.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
             this.GBoxFormulario.Location = new System.Drawing.Point(10, 0);
@@ -192,6 +196,36 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.GBoxFormulario.TabIndex = 40;
             this.GBoxFormulario.TabStop = false;
             this.GBoxFormulario.Text = "Nuevo Cliente";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(28, 340);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Domicilio";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
+            this.panel3.Location = new System.Drawing.Point(35, 382);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(570, 2);
+            this.panel3.TabIndex = 38;
+            // 
+            // DomicilioControl
+            // 
+            this.DomicilioControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DomicilioControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.DomicilioControl.ForeColor = System.Drawing.Color.Black;
+            this.DomicilioControl.Location = new System.Drawing.Point(43, 359);
+            this.DomicilioControl.MaxLength = 100;
+            this.DomicilioControl.Multiline = true;
+            this.DomicilioControl.Name = "DomicilioControl";
+            this.DomicilioControl.Size = new System.Drawing.Size(574, 27);
+            this.DomicilioControl.TabIndex = 37;
             // 
             // label1
             // 
@@ -238,26 +272,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "Nombre";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
-            this.panel10.Location = new System.Drawing.Point(377, 192);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(229, 2);
-            this.panel10.TabIndex = 27;
-            // 
-            // DomicilioControl
-            // 
-            this.DomicilioControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DomicilioControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.DomicilioControl.ForeColor = System.Drawing.Color.Black;
-            this.DomicilioControl.Location = new System.Drawing.Point(385, 169);
-            this.DomicilioControl.MaxLength = 100;
-            this.DomicilioControl.Multiline = true;
-            this.DomicilioControl.Name = "DomicilioControl";
-            this.DomicilioControl.Size = new System.Drawing.Size(221, 27);
-            this.DomicilioControl.TabIndex = 26;
             // 
             // panel7
             // 
@@ -366,30 +380,30 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.DataGrid.AccessibleName = "Table";
             this.DataGrid.AllowEditing = false;
             this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn6.AllowEditing = false;
-            gridTextColumn6.HeaderText = "IdCliente";
-            gridTextColumn6.MappingName = "IdCliente";
-            gridTextColumn6.Visible = false;
-            gridTextColumn7.AllowEditing = false;
-            gridTextColumn7.AllowResizing = true;
-            gridTextColumn7.HeaderText = "Nombre Completo";
-            gridTextColumn7.MappingName = "Nombre_Completo";
-            gridTextColumn8.AllowEditing = false;
-            gridTextColumn8.AllowResizing = true;
-            gridTextColumn8.HeaderText = "Fecha de Nacimiento";
-            gridTextColumn8.MappingName = "Fecha_Nac";
-            gridTextColumn9.AllowEditing = false;
-            gridTextColumn9.AllowResizing = true;
-            gridTextColumn9.HeaderText = "Telefono";
-            gridTextColumn9.MappingName = "Telefono";
-            gridTextColumn10.AllowEditing = false;
-            gridTextColumn10.HeaderText = "Domicilio ";
-            gridTextColumn10.MappingName = "Domicilio";
-            this.DataGrid.Columns.Add(gridTextColumn6);
-            this.DataGrid.Columns.Add(gridTextColumn7);
-            this.DataGrid.Columns.Add(gridTextColumn8);
-            this.DataGrid.Columns.Add(gridTextColumn9);
-            this.DataGrid.Columns.Add(gridTextColumn10);
+            gridTextColumn1.AllowEditing = false;
+            gridTextColumn1.HeaderText = "IdCliente";
+            gridTextColumn1.MappingName = "IdCliente";
+            gridTextColumn1.Visible = false;
+            gridTextColumn2.AllowEditing = false;
+            gridTextColumn2.AllowResizing = true;
+            gridTextColumn2.HeaderText = "Nombre Completo";
+            gridTextColumn2.MappingName = "Nombre";
+            gridTextColumn3.AllowEditing = false;
+            gridTextColumn3.AllowResizing = true;
+            gridTextColumn3.HeaderText = "Fecha de Nacimiento";
+            gridTextColumn3.MappingName = "Fecha_Nac";
+            gridTextColumn4.AllowEditing = false;
+            gridTextColumn4.AllowResizing = true;
+            gridTextColumn4.HeaderText = "Telefono";
+            gridTextColumn4.MappingName = "Telefono";
+            gridTextColumn5.AllowEditing = false;
+            gridTextColumn5.HeaderText = "Domicilio ";
+            gridTextColumn5.MappingName = "Domicilio";
+            this.DataGrid.Columns.Add(gridTextColumn1);
+            this.DataGrid.Columns.Add(gridTextColumn2);
+            this.DataGrid.Columns.Add(gridTextColumn3);
+            this.DataGrid.Columns.Add(gridTextColumn4);
+            this.DataGrid.Columns.Add(gridTextColumn5);
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
             this.DataGrid.Location = new System.Drawing.Point(0, 10);
@@ -412,45 +426,37 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.errorProvider.BlinkRate = 50;
             this.errorProvider.ContainerControl = this;
             // 
-            // sfDateTimeEdit1
+            // Fecha_NacControl
             // 
-            this.sfDateTimeEdit1.BackColor = System.Drawing.Color.Transparent;
-            this.sfDateTimeEdit1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.sfDateTimeEdit1.Location = new System.Drawing.Point(384, 71);
-            this.sfDateTimeEdit1.Name = "sfDateTimeEdit1";
-            this.sfDateTimeEdit1.Size = new System.Drawing.Size(222, 31);
-            this.sfDateTimeEdit1.Style.BorderColor = System.Drawing.Color.White;
-            this.sfDateTimeEdit1.TabIndex = 36;
+            this.Fecha_NacControl.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.Fecha_NacControl.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Fecha_NacControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.Fecha_NacControl.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha_NacControl.Location = new System.Drawing.Point(377, 76);
+            this.Fecha_NacControl.Name = "Fecha_NacControl";
+            this.Fecha_NacControl.Size = new System.Drawing.Size(230, 24);
+            this.Fecha_NacControl.TabIndex = 40;
+            this.Fecha_NacControl.Value = new System.DateTime(2021, 7, 12, 0, 0, 0, 0);
             // 
-            // label3
+            // TelefonoControl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(28, 340);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Domicilio";
+            this.TelefonoControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TelefonoControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.TelefonoControl.ForeColor = System.Drawing.Color.Black;
+            this.TelefonoControl.Location = new System.Drawing.Point(386, 169);
+            this.TelefonoControl.MaxLength = 10;
+            this.TelefonoControl.Multiline = true;
+            this.TelefonoControl.Name = "TelefonoControl";
+            this.TelefonoControl.Size = new System.Drawing.Size(221, 27);
+            this.TelefonoControl.TabIndex = 41;
             // 
-            // panel3
+            // panel5
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
-            this.panel3.Location = new System.Drawing.Point(35, 382);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(570, 2);
-            this.panel3.TabIndex = 38;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(43, 359);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(574, 27);
-            this.textBox1.TabIndex = 37;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
+            this.panel5.Location = new System.Drawing.Point(378, 192);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(229, 2);
+            this.panel5.TabIndex = 19;
             // 
             // FrmCliente
             // 
@@ -463,6 +469,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCliente";
             this.Text = "Usuario";
+            this.Shown += new System.EventHandler(this.FrmCliente_Shown);
             this.panel4.ResumeLayout(false);
             this.UsuarioFLButtons.ResumeLayout(false);
             this.UsuarioACPanel.ResumeLayout(false);
@@ -499,8 +506,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox DomicilioControl;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -508,9 +513,11 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
         private System.Windows.Forms.TextBox Apellido_PatControl;
         private System.Windows.Forms.TextBox NombreControl;
         private System.Windows.Forms.TextBox Apellido_MatControl;
-        private Syncfusion.WinForms.Input.SfDateTimeEdit sfDateTimeEdit1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DomicilioControl;
+        private System.Windows.Forms.DateTimePicker Fecha_NacControl;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox TelefonoControl;
     }
 }
