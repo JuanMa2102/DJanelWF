@@ -1,10 +1,10 @@
 ﻿using DJanel.Muebles.Business.Dependencies;
-using DJanel.Muebles.Business.ViewModels.Prueba;
+using DJanel.Muebles.Business.ViewModels.Proveedores;
+using DJanel.Muebles.Business.ViewModels.Usuarios;
 using DJanel.Muebles.CrossCutting.Services;
 using DJanel.Muebles.DataAccess.Contracts.Validations;
-using DJanel.Muebles.WFApplication.Forms.Login;
-using DJanel.Muebles.WFApplication.Forms.Prueba;
-using DJanel.Muebles.WFApplication.Validations.Prueba;
+using DJanel.Muebles.WFApplication.Forms.Usuarios;
+using DJanel.Muebles.WFApplication.Validations;
 using FluentValidation;
 using System;
 using System.Windows.Forms;
@@ -19,6 +19,7 @@ namespace DJanel.Muebles.WFApplication
         [STAThread]
         static void Main()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NDcyMTY0QDMxMzkyZTMyMmUzMGN1S0pycTZWejVUMFp6cG45U3p5emRXNW1KNlp4SGlTM2VlcUxuSEU5VlE9");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             InitializeContainer();
@@ -41,13 +42,17 @@ namespace DJanel.Muebles.WFApplication
 
         private static void RegisterValidationDependencies()
         {
-            ServiceLocator.Instance.Register<ProductoValidator, IValidator<ProductoViewModel>>();
+            ServiceLocator.Instance.Register<UsuarioValidator, IValidator<UsuarioViewModel>>();
+            ServiceLocator.Instance.Register<LoginValidator, IValidator<LoginViewModel>>();
+            ServiceLocator.Instance.Register<ProveedorValidator, IValidator<ProveedorViewModel>>();
         }
 
         private static void RegisterViewModelDependencies()
         {
             ServiceLocator.Instance.Register<ValidatorFactory>();
-            ServiceLocator.Instance.Register<ProductoViewModel>();
+            ServiceLocator.Instance.Register<UsuarioViewModel>();
+            ServiceLocator.Instance.Register<LoginViewModel>();
+            ServiceLocator.Instance.Register<ProveedorViewModel>();
         }
     }
 }

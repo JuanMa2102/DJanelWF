@@ -1,11 +1,6 @@
 ﻿using DJanel.Muebles.CrossCutting.Services;
-using DJanel.Muebles.DataAccess.Contracts.Repositories.General.Prueba;
-using DJanel.Muebles.DataAccess.Repositories.General.Prueba;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DJanel.Muebles.DataAccess.Contracts.Repositories.General;
+using DJanel.Muebles.DataAccess.Repositories.General;
 
 namespace DJanel.Muebles.Business.Dependencies
 {
@@ -13,7 +8,9 @@ namespace DJanel.Muebles.Business.Dependencies
     {
         public static void RegisterDependencies()
         {
-            ServiceLocator.Instance.Register<ProductoRepository, IProductoRepository>();
+            ServiceLocator.Instance.Register<RolRepository, IRolRepository>();
+            ServiceLocator.Instance.Register<UsuarioRepository, IUsuarioRepository>();
+            ServiceLocator.Instance.Register<ProveedorRepository, IProveedorRepository>();
         }
     }
 }

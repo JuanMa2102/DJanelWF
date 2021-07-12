@@ -81,10 +81,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Prueba\Producto.cs" />
+    <Compile Include="DTOs\ProductosProveedor.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Producto.cs" />
+    <Compile Include="Entities\Proveedor.cs" />
+    <Compile Include="Entities\Rol.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Base\IBaseRepository.cs" />
-    <Compile Include="Repositories\General\Prueba\IProductoRepository.cs" />
+    <Compile Include="Repositories\General\IProveedorRepository.cs" />
+    <Compile Include="Repositories\General\IRolRepository.cs" />
+    <Compile Include="Repositories\General\IUsuarioRepository.cs" />
     <Compile Include="Validations\Validable.cs" />
     <Compile Include="Validations\ValidatorFactory.cs" />
   </ItemGroup>
@@ -99,7 +106,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTOs\" />
     <Folder Include="Enums\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
