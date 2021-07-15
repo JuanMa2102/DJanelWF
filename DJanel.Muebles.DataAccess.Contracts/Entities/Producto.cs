@@ -12,5 +12,6 @@ namespace DJanel.Muebles.DataAccess.Contracts.Entities
         public string Modelo { get; set; }
         public string ClaveBusqueda { get; set; }
         public int Resultado { get; set; }
+        public bool Seleccionar { get; set; }
     }
 }

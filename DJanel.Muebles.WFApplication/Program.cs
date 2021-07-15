@@ -48,6 +48,7 @@ namespace DJanel.Muebles.WFApplication
             ServiceLocator.Instance.Register<LoginValidator, IValidator<LoginViewModel>>();
             ServiceLocator.Instance.Register<ProveedorValidator, IValidator<ProveedorViewModel>>();
             ServiceLocator.Instance.Register<ProductoValidator, IValidator<ProductoViewModel>>();
+            ServiceLocator.Instance.Register<ProductoCompraValidator, IValidator<ProductoCompraViewModel>>();
             ServiceLocator.Instance.Register<ClienteValidator, IValidator<ClienteViewModel>>();
         }
 
@@ -57,7 +58,10 @@ namespace DJanel.Muebles.WFApplication
             ServiceLocator.Instance.Register<UsuarioViewModel>();
             ServiceLocator.Instance.Register<LoginViewModel>();
             ServiceLocator.Instance.Register<ProveedorViewModel>();
+            ServiceLocator.Instance.Register<ProveedorGridViewModel>();
             ServiceLocator.Instance.Register<ProductoViewModel>();
+            ServiceLocator.Instance.Register<ProductoGridViewModel>();
+            ServiceLocator.Instance.Register<ProductoCompraViewModel>();
             ServiceLocator.Instance.Register<ClienteViewModel>();
         }
     }

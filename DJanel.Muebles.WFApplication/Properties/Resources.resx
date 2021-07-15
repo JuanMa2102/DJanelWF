@@ -118,17 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BUSCAR_HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUSCAR_HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Administracion_Provedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administracion_Provedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Reportes_Empleados" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reportes_Empleados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Administracion_Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administracion_Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Administracion_Inventario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Administracion_Inventario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Administracion_Empleados" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administracion_Empleados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BUSCAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUSCAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Reportes_Clientes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reportes_Clientes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BUSCAR-HOVER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUSCAR-HOVER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Reportes_Ventas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reportes_Ventas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,6 +160,9 @@
   <data name="Administracion_Productos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Administracion_Productos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BUSCAR_HOVER1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUSCAR_HOVER1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Principal_Venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Principal_Venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,13 +172,13 @@
   <data name="LogoBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoBanner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Administracion_Provedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Administracion_Provedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoBanner1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoBanner1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buscar_hoover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar_hoover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

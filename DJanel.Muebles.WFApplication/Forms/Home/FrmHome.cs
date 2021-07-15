@@ -74,5 +74,10 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         {
             GetPanel(new FrmCliente());
         }
+
+        private void BtnCompra_Click(object sender, EventArgs e)
+        {
+            GetPanel(new FrmProductoCompra());
+        }
     }
 }

@@ -40,5 +40,8 @@ namespace DJanel.Muebles.WFApplication.Constants
         public const string PaidAppointment = "NO PUEDE ELIMINAR CITAS PAGADAS";
 
         public const string DeleteCurrentUser = "NO PUEDE ELIMINAR EL USUARIO LOGGEADO";
+        public const string ErroNotSelectProducto = "DEBE SELECCIONAR UN PRODUCTO";
+        public const string ErroAlmacenProducto = "NO SE PUEDE ELIMNAR LA COMPRA NO HAY SUFICIENTES PRODUCTOS EN ALMACEN";
+        public const string ErrorNotSelectProveedor = "DEBE SELECCIONAR UN PROVEEDOR";
     }
 }

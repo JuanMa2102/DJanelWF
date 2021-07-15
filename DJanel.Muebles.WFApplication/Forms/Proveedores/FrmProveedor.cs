@@ -4,6 +4,7 @@ using DJanel.Muebles.CrossCutting.Services;
 using DJanel.Muebles.DataAccess.Contracts.Entities;
 using DJanel.Muebles.WFApplication.Constants;
 using DJanel.Muebles.WFApplication.Extencions;
+using DJanel.Muebles.WFApplication.Forms.Productos;
 using DJanel.Muebles.WFApplication.Session;
 using System;
 using System.Windows.Forms;
@@ -34,6 +35,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
                 
                 this.DataGrid.AutoGenerateColumns = false;
                 DataGrid.DataBindings.Add("DataSource", Model, "ListaProveedores", true, DataSourceUpdateMode.OnPropertyChanged);
+
+                this.GridProductos.AutoGenerateColumns = false;
+                GridProductos.DataBindings.Add("DataSource", Model, "ListaProductos", true, DataSourceUpdateMode.OnPropertyChanged);
             }
             catch (Exception ex)
             {
@@ -50,7 +54,8 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
                 Nombre_PropietarioControl.Text = "";
                 TelefonoControl.Text = "";
                 DomicilioControl.Text = "";
-                
+                Model.ListaProductos.Clear();
+
                 GBUsuario.Text = "Nuevo Proveedor";
                 Model.State = EntityState.Create;
             }
@@ -74,6 +79,38 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             catch (Exception)
             {
                 throw;
+            }
+        }
+
+        private Producto ObtenerProductoSeleccionado()
+        {
+            try
+            {
+                if (GridProductos.SelectedItems.Count == 1)
+                {
+                    return (Producto)GridProductos.SelectedItem;
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void AbrirForm()
+        {
+            try
+            {
+                var HomeForm = new FrmProductosGrid();
+                HomeForm.ShowDialog();
+                HomeForm.Dispose();
+                GridProductos.Refresh();
+                Model.GetListaProductos(HomeForm.GetProductos());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
         #endregion
@@ -125,7 +162,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             }
         }
 
-        private void BtnModificar_Click(object sender, EventArgs e)
+        private async void BtnModificar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -139,6 +176,8 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
                     Model.Nombre_Propietario = item.Nombre_Propietario;
                     Model.Telefono = item.Telefono;
                     Model.Domicilio = item.Domicilio;
+                    await Model.LlenarListaProductosAsync();
+
                     Model.State = EntityState.Update;
                 }
                 else
@@ -204,6 +243,34 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             }
         }
 
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                AbrirForm();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), Messages.SystemName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var item = ObtenerProductoSeleccionado();
+                DataGrid.Refresh();
+                Model.RemoveListaProductos(item);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString(), Messages.SystemName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         #endregion
+
+
     }
 }

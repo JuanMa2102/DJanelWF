@@ -93,11 +93,29 @@
     <Compile Include="Forms\Productos\FrmProducto.Designer.cs">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Productos\FrmProductosGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Productos\FrmProductosGrid.Designer.cs">
+      <DependentUpon>FrmProductosGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Productos\FrmProductoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Productos\FrmProductoCompra.Designer.cs">
+      <DependentUpon>FrmProductoCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Proveedores\FrmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Proveedores\FrmProveedor.Designer.cs">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Proveedores\FrmProveedorGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Proveedores\FrmProveedorGrid.Designer.cs">
+      <DependentUpon>FrmProveedorGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Usuarios\Login.cs">
       <SubType>Form</SubType>
@@ -116,6 +134,7 @@
     <Compile Include="Session\CurrentSession.cs" />
     <Compile Include="Validations\ClienteValidator.cs" />
     <Compile Include="Validations\LoginValidator.cs" />
+    <Compile Include="Validations\ProductoCompraValidator.cs" />
     <Compile Include="Validations\ProductoValidator.cs" />
     <Compile Include="Validations\ProveedorValidator.cs" />
     <Compile Include="Validations\UsuarioValidator.cs" />
@@ -128,8 +147,17 @@
     <EmbeddedResource Include="Forms\Productos\FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Productos\FrmProductosGrid.resx">
+      <DependentUpon>FrmProductosGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Productos\FrmProductoCompra.resx">
+      <DependentUpon>FrmProductoCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Proveedores\FrmProveedor.resx">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Proveedores\FrmProveedorGrid.resx">
+      <DependentUpon>FrmProveedorGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Usuarios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -175,7 +203,9 @@
       <Name>DJanel.Muebles.DataAccess.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\BUSCAR.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Principal_Venta.png" />
   </ItemGroup>
@@ -220,6 +250,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administracion_Inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUSCAR_HOVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUSCAR_HOVER1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUSCAR-HOVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar_hoover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

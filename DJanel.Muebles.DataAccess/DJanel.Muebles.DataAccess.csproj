@@ -48,7 +48,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Base\Repository.cs" />
     <Compile Include="Repositories\General\ClienteRepository.cs" />
+    <Compile Include="Repositories\General\ProductoCompraRepository.cs" />
     <Compile Include="Repositories\General\ProductoRepository.cs" />
+    <Compile Include="Repositories\General\ProductosProveedorRepository.cs" />
     <Compile Include="Repositories\General\ProveedorRepository.cs" />
     <Compile Include="Repositories\General\RolRepository.cs" />
     <Compile Include="Repositories\General\UsuarioRepository.cs" />

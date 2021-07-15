@@ -158,6 +158,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
                 IniciarBinding();
                 //this.LblVersionSistema.Text = "Version 1.0";
                 //this.LblDerechoReservado.Text = "Impulsado por CID Fares® - Todos los derechos reservados " + DateTime.Now.Year.ToString();
+                UserAccountControl.Text = "admin";
+                UserPasswordControl.Text = "123456";
+                BtnLogin_Click(this,e);
             }
             catch (Exception)
             {

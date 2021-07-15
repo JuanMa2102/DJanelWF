@@ -118,5 +118,47 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
             throw new System.NotImplementedException();
         }
 
+        public async Task<IEnumerable<Proveedor>> Busqueda(string Busqueda, int IdProducto)
+        {
+            try
+            {
+                using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+                {
+                    conexion.Open();
+                    var dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Busqueda", Busqueda);
+                    dynamicParameters.Add("@IdProducto", IdProducto);
+                    var result = await conexion.QueryAsync<Proveedor>("[Proveedor].[DJanel_Busqueda_ProveedoresXIdProducto]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public async Task<IEnumerable<Proveedor>> GetProveedorAsync(int IdProducto)
+        {
+            try
+            {
+                using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+                {
+                    conexion.Open();
+                    var dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@IdProducto", IdProducto);
+                    var result = await conexion.QueryAsync<Proveedor>("[Proveedor].[DJanel_GetAll_ProveedoresXIdProducto]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

@@ -67,3 +67,6 @@ C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug\DJanel.Muebles.WFApplication.Forms.Proveedores.FrmProveedor.resources
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug\DJanel.Muebles.WFApplication.Forms.Productos.FrmProducto.resources
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug\DJanel.Muebles.WFApplication.Forms.Clientes.FrmCliente.resources
+C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug\DJanel.Muebles.WFApplication.Forms.Productos.FrmProductosGrid.resources
+C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug\DJanel.Muebles.WFApplication.Forms.Productos.FrmProductoCompra.resources
+C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.WFApplication\obj\Debug\DJanel.Muebles.WFApplication.Forms.Proveedores.FrmProveedorGrid.resources

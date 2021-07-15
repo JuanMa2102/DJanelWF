@@ -114,8 +114,14 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.LblRolCurrent = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.LblNameCurrent = new System.Windows.Forms.Label();
+            this.AdministracionInventario = new System.Windows.Forms.Panel();
+            this.AdministracionInventarioPictureBox = new System.Windows.Forms.Panel();
+            this.AdministracionInventarioButton = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.BtnCompra = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PBVenta = new System.Windows.Forms.PictureBox();
+            this.PBInventario = new System.Windows.Forms.PictureBox();
             this.PBEmpleados = new System.Windows.Forms.PictureBox();
             this.AdministracionProveedoresPictureBox = new System.Windows.Forms.PictureBox();
             this.PBProductos = new System.Windows.Forms.PictureBox();
@@ -177,8 +183,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.AdministracionInventario.SuspendLayout();
+            this.AdministracionInventarioPictureBox.SuspendLayout();
+            this.AdministracionInventarioButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdministracionProveedoresPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).BeginInit();
@@ -255,12 +265,13 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Administracion.Controls.Add(this.AdministracionRight);
             this.Administracion.Location = new System.Drawing.Point(13, 86);
             this.Administracion.Name = "Administracion";
-            this.Administracion.Size = new System.Drawing.Size(197, 188);
+            this.Administracion.Size = new System.Drawing.Size(197, 223);
             this.Administracion.TabIndex = 1;
             // 
             // AdministracionContainer
             // 
             this.AdministracionContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AdministracionContainer.Controls.Add(this.AdministracionInventario);
             this.AdministracionContainer.Controls.Add(this.AdministracionEmpleados);
             this.AdministracionContainer.Controls.Add(this.AdministracionProveedores);
             this.AdministracionContainer.Controls.Add(this.AdministracionProductos);
@@ -269,7 +280,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AdministracionContainer.Location = new System.Drawing.Point(10, 10);
             this.AdministracionContainer.Name = "AdministracionContainer";
-            this.AdministracionContainer.Size = new System.Drawing.Size(177, 168);
+            this.AdministracionContainer.Size = new System.Drawing.Size(177, 203);
             this.AdministracionContainer.TabIndex = 6;
             // 
             // AdministracionEmpleados
@@ -484,7 +495,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             // AdministracionBottom
             // 
             this.AdministracionBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.AdministracionBottom.Location = new System.Drawing.Point(10, 178);
+            this.AdministracionBottom.Location = new System.Drawing.Point(10, 213);
             this.AdministracionBottom.Name = "AdministracionBottom";
             this.AdministracionBottom.Size = new System.Drawing.Size(177, 10);
             this.AdministracionBottom.TabIndex = 4;
@@ -494,7 +505,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.AdministracionLeft.Location = new System.Drawing.Point(0, 0);
             this.AdministracionLeft.Name = "AdministracionLeft";
-            this.AdministracionLeft.Size = new System.Drawing.Size(10, 188);
+            this.AdministracionLeft.Size = new System.Drawing.Size(10, 223);
             this.AdministracionLeft.TabIndex = 2;
             // 
             // AdministracionRight
@@ -502,7 +513,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.AdministracionRight.Location = new System.Drawing.Point(187, 0);
             this.AdministracionRight.Name = "AdministracionRight";
-            this.AdministracionRight.Size = new System.Drawing.Size(10, 188);
+            this.AdministracionRight.Size = new System.Drawing.Size(10, 223);
             this.AdministracionRight.TabIndex = 1;
             // 
             // FLPanelContainerMenu
@@ -590,7 +601,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Reportes.Controls.Add(this.ReportesTop);
             this.Reportes.Controls.Add(this.ReportesLeft);
             this.Reportes.Controls.Add(this.ReportesRight);
-            this.Reportes.Location = new System.Drawing.Point(13, 280);
+            this.Reportes.Location = new System.Drawing.Point(13, 315);
             this.Reportes.Name = "Reportes";
             this.Reportes.Size = new System.Drawing.Size(197, 187);
             this.Reportes.TabIndex = 8;
@@ -838,7 +849,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Sistema.Controls.Add(this.SistemaTop);
             this.Sistema.Controls.Add(this.SistemaLeft);
             this.Sistema.Controls.Add(this.SistemaRight);
-            this.Sistema.Location = new System.Drawing.Point(13, 473);
+            this.Sistema.Location = new System.Drawing.Point(13, 508);
             this.Sistema.Name = "Sistema";
             this.Sistema.Size = new System.Drawing.Size(197, 116);
             this.Sistema.TabIndex = 9;
@@ -1083,6 +1094,51 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.LblNameCurrent.Text = "Juan Manuel Martinez Perez";
             this.LblNameCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // AdministracionInventario
+            // 
+            this.AdministracionInventario.Controls.Add(this.AdministracionInventarioButton);
+            this.AdministracionInventario.Controls.Add(this.AdministracionInventarioPictureBox);
+            this.AdministracionInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AdministracionInventario.Location = new System.Drawing.Point(0, 167);
+            this.AdministracionInventario.Name = "AdministracionInventario";
+            this.AdministracionInventario.Size = new System.Drawing.Size(177, 36);
+            this.AdministracionInventario.TabIndex = 10;
+            // 
+            // AdministracionInventarioPictureBox
+            // 
+            this.AdministracionInventarioPictureBox.Controls.Add(this.PBInventario);
+            this.AdministracionInventarioPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AdministracionInventarioPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.AdministracionInventarioPictureBox.Name = "AdministracionInventarioPictureBox";
+            this.AdministracionInventarioPictureBox.Size = new System.Drawing.Size(37, 36);
+            this.AdministracionInventarioPictureBox.TabIndex = 0;
+            // 
+            // AdministracionInventarioButton
+            // 
+            this.AdministracionInventarioButton.Controls.Add(this.BtnCompra);
+            this.AdministracionInventarioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdministracionInventarioButton.Location = new System.Drawing.Point(37, 0);
+            this.AdministracionInventarioButton.Name = "AdministracionInventarioButton";
+            this.AdministracionInventarioButton.Size = new System.Drawing.Size(140, 36);
+            this.AdministracionInventarioButton.TabIndex = 1;
+            // 
+            // BtnCompra
+            // 
+            this.BtnCompra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCompra.FlatAppearance.BorderSize = 0;
+            this.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCompra.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
+            this.BtnCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCompra.Location = new System.Drawing.Point(0, 0);
+            this.BtnCompra.Name = "BtnCompra";
+            this.BtnCompra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BtnCompra.Size = new System.Drawing.Size(140, 36);
+            this.BtnCompra.TabIndex = 7;
+            this.BtnCompra.Text = "Compra";
+            this.BtnCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCompra.UseVisualStyleBackColor = true;
+            this.BtnCompra.Click += new System.EventHandler(this.BtnCompra_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.LogoBanner1;
@@ -1104,6 +1160,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.PBVenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PBVenta.TabIndex = 0;
             this.PBVenta.TabStop = false;
+            // 
+            // PBInventario
+            // 
+            this.PBInventario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBInventario.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Inventario;
+            this.PBInventario.Location = new System.Drawing.Point(0, 0);
+            this.PBInventario.Name = "PBInventario";
+            this.PBInventario.Padding = new System.Windows.Forms.Padding(5);
+            this.PBInventario.Size = new System.Drawing.Size(37, 36);
+            this.PBInventario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBInventario.TabIndex = 1;
+            this.PBInventario.TabStop = false;
             // 
             // PBEmpleados
             // 
@@ -1296,8 +1364,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.AdministracionInventario.ResumeLayout(false);
+            this.AdministracionInventarioPictureBox.ResumeLayout(false);
+            this.AdministracionInventarioButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBEmpleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdministracionProveedoresPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).EndInit();
@@ -1410,5 +1482,11 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         private System.Windows.Forms.Panel pnl_Contenedor;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel AdministracionInventario;
+        private System.Windows.Forms.Panel AdministracionInventarioButton;
+        private System.Windows.Forms.Button BtnCompra;
+        private System.Windows.Forms.Panel AdministracionInventarioPictureBox;
+        private System.Windows.Forms.PictureBox PBInventario;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

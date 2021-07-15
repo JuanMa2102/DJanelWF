@@ -83,6 +83,16 @@ namespace DJanel.Muebles.WFApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Administracion_Inventario {
+            get {
+                object obj = ResourceManager.GetObject("Administracion_Inventario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Administracion_Productos {
             get {
                 object obj = ResourceManager.GetObject("Administracion_Productos", resourceCulture);
@@ -96,6 +106,36 @@ namespace DJanel.Muebles.WFApplication.Properties {
         internal static System.Drawing.Bitmap Administracion_Provedor {
             get {
                 object obj = ResourceManager.GetObject("Administracion_Provedor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BUSCAR {
+            get {
+                object obj = ResourceManager.GetObject("BUSCAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buscar_hoover {
+            get {
+                object obj = ResourceManager.GetObject("buscar_hoover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BUSCAR_HOVER1 {
+            get {
+                object obj = ResourceManager.GetObject("BUSCAR_HOVER1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

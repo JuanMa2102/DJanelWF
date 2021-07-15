@@ -43,9 +43,13 @@
   <ItemGroup>
     <Compile Include="Dependencies\Registrar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObjects\SelectMode.cs" />
     <Compile Include="ValueObjects\EntityState.cs" />
     <Compile Include="ViewModels\Clientes\ClienteViewModel.cs" />
+    <Compile Include="ViewModels\Productos\ProductoCompraViewModel.cs" />
+    <Compile Include="ViewModels\Productos\ProductoGridViewModel.cs" />
     <Compile Include="ViewModels\Productos\ProductoViewModel.cs" />
+    <Compile Include="ViewModels\Proveedores\ProveedorGridViewModel.cs" />
     <Compile Include="ViewModels\Proveedores\ProveedorViewModel.cs" />
     <Compile Include="ViewModels\Usuarios\LoginViewModel.cs" />
     <Compile Include="ViewModels\Usuarios\UsuarioViewModel.cs" />

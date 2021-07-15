@@ -136,6 +136,28 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
             }
         }
 
+        public async Task<IEnumerable<Producto>> Busqueda(string Busqueda)
+        {
+            try
+            {
+                using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+                {
+                    conexion.Open();
+                    var dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Busqueda", Busqueda);
+                    var result = await conexion.QueryAsync<Producto>("[Producto].[DJanel_Busqueda_Productos]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        #region Metodos no implementados
         public Task<Producto> GetAsync(object id)
         {
             throw new System.NotImplementedException();
@@ -145,7 +167,6 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
         {
             throw new System.NotImplementedException();
         }
-
-        
+        #endregion
     }
 }

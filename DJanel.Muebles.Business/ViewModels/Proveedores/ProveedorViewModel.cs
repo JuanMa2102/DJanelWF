@@ -1,9 +1,12 @@
 ﻿using DJanel.Muebles.Business.ValueObjects;
+using DJanel.Muebles.DataAccess.Contracts.DTOs;
 using DJanel.Muebles.DataAccess.Contracts.Entities;
 using DJanel.Muebles.DataAccess.Contracts.Repositories.General;
 using DJanel.Muebles.DataAccess.Contracts.Validations;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace DJanel.Muebles.Business.ViewModels.Proveedores
@@ -12,18 +15,22 @@ namespace DJanel.Muebles.Business.ViewModels.Proveedores
     {
         #region Propiedades privadas
         private IProveedorRepository proveedorRepository { get; set; }
+        private IProductosProveedorRepository productosProveedorRepository { get; set; }
         #endregion
 
         #region Propiedades públicas
         public BindingList<Proveedor> ListaProveedores { get; set; }
+        public BindingList<Producto> ListaProductos { get; set; }
         public EntityState State { get; set; }
         #endregion
 
         #region Constructor
-        public ProveedorViewModel(IProveedorRepository ProveedorRepository)
+        public ProveedorViewModel(IProveedorRepository ProveedorRepository, IProductosProveedorRepository ProductosProveedorRepository)
         {
             proveedorRepository = ProveedorRepository;
+            productosProveedorRepository = ProductosProveedorRepository;
             ListaProveedores = new BindingList<Proveedor>();
+            ListaProductos = new BindingList<Producto>();
         }
         #endregion
 
@@ -45,23 +52,71 @@ namespace DJanel.Muebles.Business.ViewModels.Proveedores
             }
         }
 
-        public async Task<Proveedor> Guardar(int Id)
+        public async Task LlenarListaProductosAsync()
         {
             try
             {
-                Proveedor model = new Proveedor
+                var x = await productosProveedorRepository.GetProductosAsync(IdProveedor);
+                ListaProductos.Clear();
+                foreach (var item in x)
                 {
-                    IdProveedor = IdProveedor,
-                    Nombre_Empresa = Nombre_Empresa,
-                    Nombre_Propietario = _Nombre_Propietario,
-                    Domicilio = Domicilio,
-                    Telefono = Telefono
+                    ListaProductos.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void GetListaProductos(BindingList<Producto> x)
+        {
+            try
+            {
+                List<Producto> dic = new List<Producto>();
+                foreach (var item in x)
+                {
+                    var c = ListaProductos.Where( Producto => Producto.IdProducto == item.IdProducto).Count();
+                    if(c == 0)
+                        ListaProductos.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void RemoveListaProductos(Producto x)
+        {
+            try
+            {
+                ListaProductos.Remove(x);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public async Task<ProductosProveedor> Guardar(int Id)
+        {
+            try
+            {
+                ProductosProveedor model = new ProductosProveedor
+                {
+                    DatosProveedor = {
+                        IdProveedor = IdProveedor,
+                        Nombre_Empresa = Nombre_Empresa,
+                        Nombre_Propietario = _Nombre_Propietario,
+                        Domicilio = Domicilio,
+                        Telefono = Telefono },
+                    ListaProducto = ListaProductos
                 };
                 if (State == EntityState.Create)
-                    return await proveedorRepository.AddAsync(model, Id);
+                    return await productosProveedorRepository.AddAsync(model, Id);
                 else
                 if (State == EntityState.Update)
-                    return await proveedorRepository.UpdateAsync(model, Id);
+                    return await productosProveedorRepository.UpdateAsync(model, Id);
 
                 return model;
             }

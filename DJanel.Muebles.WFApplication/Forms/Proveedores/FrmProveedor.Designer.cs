@@ -30,16 +30,16 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn11 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn12 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn13 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn14 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn15 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn1 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn2 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn3 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn9 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn10 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.UsuarioFLButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnNuevo = new System.Windows.Forms.Button();
@@ -52,12 +52,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
+            this.GridProductos = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.DomicilioControl = new System.Windows.Forms.TextBox();
             this.TelefonoControl = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -74,7 +74,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.UsuarioFLButtons.SuspendLayout();
             this.UsuarioACPanel.SuspendLayout();
             this.GBUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridProductos)).BeginInit();
             this.UsuarioGridPanel.SuspendLayout();
             this.UsuarioConteiner.SuspendLayout();
             this.UsuarioContainerGrid.SuspendLayout();
@@ -177,12 +177,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.GBUsuario.Controls.Add(this.panel2);
             this.GBUsuario.Controls.Add(this.label1);
             this.GBUsuario.Controls.Add(this.label7);
-            this.GBUsuario.Controls.Add(this.button1);
+            this.GBUsuario.Controls.Add(this.BtnAgregar);
             this.GBUsuario.Controls.Add(this.label4);
             this.GBUsuario.Controls.Add(this.button2);
             this.GBUsuario.Controls.Add(this.panel10);
             this.GBUsuario.Controls.Add(this.panel9);
-            this.GBUsuario.Controls.Add(this.sfDataGrid1);
+            this.GBUsuario.Controls.Add(this.GridProductos);
             this.GBUsuario.Controls.Add(this.DomicilioControl);
             this.GBUsuario.Controls.Add(this.TelefonoControl);
             this.GBUsuario.Controls.Add(this.panel7);
@@ -237,18 +237,19 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.label7.TabIndex = 28;
             this.label7.Text = "Domicilio";
             // 
-            // button1
+            // BtnAgregar
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(31, 367);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 32);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Agregar ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnAgregar.BackColor = System.Drawing.Color.ForestGreen;
+            this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnAgregar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAgregar.Location = new System.Drawing.Point(31, 367);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(93, 32);
+            this.BtnAgregar.TabIndex = 16;
+            this.BtnAgregar.Text = "Agregar ";
+            this.BtnAgregar.UseVisualStyleBackColor = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // label4
             // 
@@ -272,6 +273,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.button2.TabIndex = 30;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel10
             // 
@@ -289,47 +291,48 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.panel9.Size = new System.Drawing.Size(229, 2);
             this.panel9.TabIndex = 24;
             // 
-            // sfDataGrid1
+            // GridProductos
             // 
-            this.sfDataGrid1.AccessibleName = "Table";
-            this.sfDataGrid1.AllowEditing = false;
-            this.sfDataGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GridProductos.AccessibleName = "Table";
+            this.GridProductos.AllowEditing = false;
+            this.GridProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sfDataGrid1.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn1.AllowEditing = false;
-            gridTextColumn1.HeaderText = "IdUsuario";
-            gridTextColumn1.MappingName = "IdProducto";
-            gridTextColumn1.Visible = false;
-            gridTextColumn2.AllowEditing = false;
-            gridTextColumn2.AllowResizing = true;
-            gridTextColumn2.HeaderText = "Producto";
-            gridTextColumn2.MappingName = "Nombre";
-            gridTextColumn2.Width = 130D;
-            gridTextColumn3.AllowEditing = false;
-            gridTextColumn3.AllowResizing = true;
-            gridTextColumn3.HeaderText = "Descripcion";
-            gridTextColumn3.MappingName = "Descripcion";
-            gridTextColumn4.AllowEditing = false;
-            gridTextColumn4.AllowResizing = true;
-            gridTextColumn4.HeaderText = "Marca";
-            gridTextColumn4.MappingName = "Marca";
-            gridTextColumn5.AllowEditing = false;
-            gridTextColumn5.AllowResizing = true;
-            gridTextColumn5.HeaderText = "Modelo";
-            gridTextColumn5.MappingName = "Modelo";
-            this.sfDataGrid1.Columns.Add(gridTextColumn1);
-            this.sfDataGrid1.Columns.Add(gridTextColumn2);
-            this.sfDataGrid1.Columns.Add(gridTextColumn3);
-            this.sfDataGrid1.Columns.Add(gridTextColumn4);
-            this.sfDataGrid1.Columns.Add(gridTextColumn5);
-            this.sfDataGrid1.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
-            this.sfDataGrid1.Location = new System.Drawing.Point(30, 405);
-            this.sfDataGrid1.Name = "sfDataGrid1";
-            this.sfDataGrid1.SerializationController = null;
-            this.sfDataGrid1.Size = new System.Drawing.Size(581, 314);
-            this.sfDataGrid1.TabIndex = 29;
-            this.sfDataGrid1.Text = "sfDataGrid1";
+            this.GridProductos.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
+            gridTextColumn11.AllowEditing = false;
+            gridTextColumn11.HeaderText = "IdUsuario";
+            gridTextColumn11.MappingName = "IdProducto";
+            gridTextColumn11.Visible = false;
+            gridTextColumn12.AllowEditing = false;
+            gridTextColumn12.AllowResizing = true;
+            gridTextColumn12.HeaderText = "Producto";
+            gridTextColumn12.MappingName = "Nombre";
+            gridTextColumn12.Width = 130D;
+            gridTextColumn13.AllowEditing = false;
+            gridTextColumn13.AllowResizing = true;
+            gridTextColumn13.HeaderText = "Descripcion";
+            gridTextColumn13.MappingName = "Descripcion";
+            gridTextColumn14.AllowEditing = false;
+            gridTextColumn14.AllowResizing = true;
+            gridTextColumn14.HeaderText = "Marca";
+            gridTextColumn14.MappingName = "Marca";
+            gridTextColumn15.AllowEditing = false;
+            gridTextColumn15.AllowResizing = true;
+            gridTextColumn15.HeaderText = "Modelo";
+            gridTextColumn15.MappingName = "Modelo";
+            this.GridProductos.Columns.Add(gridTextColumn11);
+            this.GridProductos.Columns.Add(gridTextColumn12);
+            this.GridProductos.Columns.Add(gridTextColumn13);
+            this.GridProductos.Columns.Add(gridTextColumn14);
+            this.GridProductos.Columns.Add(gridTextColumn15);
+            this.GridProductos.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
+            this.GridProductos.Location = new System.Drawing.Point(30, 405);
+            this.GridProductos.Name = "GridProductos";
+            this.GridProductos.NavigationMode = Syncfusion.WinForms.DataGrid.Enums.NavigationMode.Row;
+            this.GridProductos.SerializationController = null;
+            this.GridProductos.Size = new System.Drawing.Size(581, 314);
+            this.GridProductos.TabIndex = 29;
+            this.GridProductos.Text = "sfDataGrid1";
             // 
             // DomicilioControl
             // 
@@ -349,7 +352,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.TelefonoControl.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.TelefonoControl.ForeColor = System.Drawing.Color.Black;
             this.TelefonoControl.Location = new System.Drawing.Point(384, 73);
-            this.TelefonoControl.MaxLength = 100;
+            this.TelefonoControl.MaxLength = 10;
             this.TelefonoControl.Multiline = true;
             this.TelefonoControl.Name = "TelefonoControl";
             this.TelefonoControl.Size = new System.Drawing.Size(221, 27);
@@ -432,34 +435,35 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.DataGrid.AccessibleName = "Table";
             this.DataGrid.AllowEditing = false;
             this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn6.AllowEditing = false;
-            gridTextColumn6.HeaderText = "IdUsuario";
-            gridTextColumn6.MappingName = "IdProveedor";
-            gridTextColumn6.Visible = false;
-            gridTextColumn7.AllowEditing = false;
-            gridTextColumn7.AllowResizing = true;
-            gridTextColumn7.HeaderText = "Nombre de la empresa";
-            gridTextColumn7.MappingName = "Nombre_Empresa";
-            gridTextColumn8.AllowEditing = false;
-            gridTextColumn8.AllowResizing = true;
-            gridTextColumn8.HeaderText = "Nombre del propietario";
-            gridTextColumn8.MappingName = "Nombre_Propietario";
-            gridTextColumn9.AllowEditing = false;
-            gridTextColumn9.AllowResizing = true;
-            gridTextColumn9.HeaderText = "Telefono";
-            gridTextColumn9.MappingName = "Telefono";
-            gridTextColumn10.AllowEditing = false;
-            gridTextColumn10.HeaderText = "Domicilio";
-            gridTextColumn10.MappingName = "Domicilio";
-            this.DataGrid.Columns.Add(gridTextColumn6);
-            this.DataGrid.Columns.Add(gridTextColumn7);
-            this.DataGrid.Columns.Add(gridTextColumn8);
-            this.DataGrid.Columns.Add(gridTextColumn9);
-            this.DataGrid.Columns.Add(gridTextColumn10);
+            gridTextColumn1.AllowEditing = false;
+            gridTextColumn1.HeaderText = "IdUsuario";
+            gridTextColumn1.MappingName = "IdProveedor";
+            gridTextColumn1.Visible = false;
+            gridTextColumn2.AllowEditing = false;
+            gridTextColumn2.AllowResizing = true;
+            gridTextColumn2.HeaderText = "Nombre de la empresa";
+            gridTextColumn2.MappingName = "Nombre_Empresa";
+            gridTextColumn3.AllowEditing = false;
+            gridTextColumn3.AllowResizing = true;
+            gridTextColumn3.HeaderText = "Nombre del propietario";
+            gridTextColumn3.MappingName = "Nombre_Propietario";
+            gridTextColumn4.AllowEditing = false;
+            gridTextColumn4.AllowResizing = true;
+            gridTextColumn4.HeaderText = "Telefono";
+            gridTextColumn4.MappingName = "Telefono";
+            gridTextColumn5.AllowEditing = false;
+            gridTextColumn5.HeaderText = "Domicilio";
+            gridTextColumn5.MappingName = "Domicilio";
+            this.DataGrid.Columns.Add(gridTextColumn1);
+            this.DataGrid.Columns.Add(gridTextColumn2);
+            this.DataGrid.Columns.Add(gridTextColumn3);
+            this.DataGrid.Columns.Add(gridTextColumn4);
+            this.DataGrid.Columns.Add(gridTextColumn5);
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
             this.DataGrid.Location = new System.Drawing.Point(0, 10);
             this.DataGrid.Name = "DataGrid";
+            this.DataGrid.NavigationMode = Syncfusion.WinForms.DataGrid.Enums.NavigationMode.Row;
             this.DataGrid.Size = new System.Drawing.Size(621, 712);
             this.DataGrid.TabIndex = 0;
             this.DataGrid.Text = "sfDataGrid1";
@@ -495,7 +499,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             this.UsuarioACPanel.ResumeLayout(false);
             this.GBUsuario.ResumeLayout(false);
             this.GBUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sfDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridProductos)).EndInit();
             this.UsuarioGridPanel.ResumeLayout(false);
             this.UsuarioGridPanel.PerformLayout();
             this.UsuarioConteiner.ResumeLayout(false);
@@ -523,7 +527,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
         private System.Windows.Forms.GroupBox GBUsuario;
         private System.Windows.Forms.ErrorProvider errorProviderUsuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -537,6 +541,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
         private System.Windows.Forms.TextBox Nombre_PropietarioControl;
         private System.Windows.Forms.TextBox Nombre_EmpresaControl;
         private System.Windows.Forms.TextBox TelefonoControl;
-        private Syncfusion.WinForms.DataGrid.SfDataGrid sfDataGrid1;
+        private Syncfusion.WinForms.DataGrid.SfDataGrid GridProductos;
     }
 }
