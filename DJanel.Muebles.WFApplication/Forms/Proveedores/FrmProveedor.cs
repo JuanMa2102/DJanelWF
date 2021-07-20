@@ -234,7 +234,15 @@ namespace DJanel.Muebles.WFApplication.Forms.Proveedores
             {
                 await Model.GetAllAsync();
                 IniciarBinding();
-
+                if (CurrentSession.IdRol == 2)
+                {
+                    this.BtnEliminar.Visible = false;
+                    this.BtnModificar.Visible = false;
+                    this.BtnNuevo.Visible = false;
+                    this.BtnGuardar.Visible = false;
+                    this.BtnAgregar.Visible = false;
+                    this.BtnEliminar.Visible = false;
+                }
             }
             catch (Exception ex)
             {

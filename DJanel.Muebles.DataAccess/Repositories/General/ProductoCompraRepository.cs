@@ -213,5 +213,27 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
         {
             throw new NotImplementedException();
         }
+
+        public async Task<IEnumerable<ReporteCompra>> GetReporteComprasAsync(DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+                {
+                    conexion.Open();
+                    var dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@startDate", startDate);
+                    dynamicParameters.Add("@endDate", endDate);
+                    var result = await conexion.QueryAsync<ReporteCompra>("[Producto].[DJanel_Get_ReporteCompra]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

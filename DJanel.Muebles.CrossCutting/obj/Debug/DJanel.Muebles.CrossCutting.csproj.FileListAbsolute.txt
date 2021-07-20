@@ -18,7 +18,6 @@ C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\bin\Debug\
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\obj\Debug\DJanel.Muebles.CrossCutting.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\obj\Debug\DJanel.Muebles.CrossCutting.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\obj\Debug\DJanel.Muebles.CrossCutting.csproj.CopyComplete
 C:\Users\user\source\repos\DJanel.Muebles\DJanel.Muebles.CrossCutting\obj\Debug\DJanel.Muebles.CrossCutting.dll

@@ -163,6 +163,15 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
                 IniciarBinding();
                 Model.FechaString = DateTime.Now.ToShortDateString();
                 Model.Fecha = DateTime.Now;
+
+                if (CurrentSession.IdRol == 2)
+                {
+                    this.BtnEliminar.Visible = false;
+                    this.BtnModificar.Visible = false;
+                    this.BtnNuevo.Visible = false;
+                    this.BtnGuardar.Visible = false;
+                }
+
             }
             catch (Exception ex)
             {

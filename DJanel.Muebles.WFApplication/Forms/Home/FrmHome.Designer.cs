@@ -36,6 +36,10 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.LblPrincipal = new System.Windows.Forms.Label();
             this.Administracion = new System.Windows.Forms.Panel();
             this.AdministracionContainer = new System.Windows.Forms.Panel();
+            this.AdministracionInventario = new System.Windows.Forms.Panel();
+            this.AdministracionInventarioButton = new System.Windows.Forms.Panel();
+            this.BtnCompra = new System.Windows.Forms.Button();
+            this.AdministracionInventarioPictureBox = new System.Windows.Forms.Panel();
             this.AdministracionEmpleados = new System.Windows.Forms.Panel();
             this.AdministracionEmpleadosButton = new System.Windows.Forms.Panel();
             this.BtnEmpleados = new System.Windows.Forms.Button();
@@ -72,14 +76,10 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductosButton = new System.Windows.Forms.Panel();
             this.BtnReporteProductos = new System.Windows.Forms.Button();
             this.ReportesProductosPictureBox = new System.Windows.Forms.Panel();
-            this.ReportesEmpleados = new System.Windows.Forms.Panel();
-            this.ReportesEmpleadosButton = new System.Windows.Forms.Panel();
-            this.BtnReporteEmpleados = new System.Windows.Forms.Button();
-            this.ReportesEmpleadosPictureBox = new System.Windows.Forms.Panel();
-            this.ReportesClientes = new System.Windows.Forms.Panel();
-            this.ReportesClientesButton = new System.Windows.Forms.Panel();
-            this.BtnReporteCliente = new System.Windows.Forms.Button();
-            this.ReportesClientesPictureBox = new System.Windows.Forms.Panel();
+            this.ReportesCompra = new System.Windows.Forms.Panel();
+            this.ReportesCompraButton = new System.Windows.Forms.Panel();
+            this.BtnReporteCompra = new System.Windows.Forms.Button();
+            this.ReportesCompraPictureBox = new System.Windows.Forms.Panel();
             this.ReportesVentas = new System.Windows.Forms.Panel();
             this.ReportesVentasButton = new System.Windows.Forms.Panel();
             this.BtnReporteVentas = new System.Windows.Forms.Button();
@@ -114,11 +114,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.LblRolCurrent = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.LblNameCurrent = new System.Windows.Forms.Label();
-            this.AdministracionInventario = new System.Windows.Forms.Panel();
-            this.AdministracionInventarioPictureBox = new System.Windows.Forms.Panel();
-            this.AdministracionInventarioButton = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.BtnCompra = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PBVenta = new System.Windows.Forms.PictureBox();
             this.PBInventario = new System.Windows.Forms.PictureBox();
@@ -127,7 +123,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.PBProductos = new System.Windows.Forms.PictureBox();
             this.PBCliente = new System.Windows.Forms.PictureBox();
             this.PBReporteProductos = new System.Windows.Forms.PictureBox();
-            this.PBReporteEmpleados = new System.Windows.Forms.PictureBox();
             this.PBReporteCliente = new System.Windows.Forms.PictureBox();
             this.PBReporteVentas = new System.Windows.Forms.PictureBox();
             this.PBSalir = new System.Windows.Forms.PictureBox();
@@ -137,6 +132,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.PrincipalHeader.SuspendLayout();
             this.Administracion.SuspendLayout();
             this.AdministracionContainer.SuspendLayout();
+            this.AdministracionInventario.SuspendLayout();
+            this.AdministracionInventarioButton.SuspendLayout();
+            this.AdministracionInventarioPictureBox.SuspendLayout();
             this.AdministracionEmpleados.SuspendLayout();
             this.AdministracionEmpleadosButton.SuspendLayout();
             this.AdministracionEmpleadosPictureBox.SuspendLayout();
@@ -159,12 +157,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductos.SuspendLayout();
             this.ReportesProductosButton.SuspendLayout();
             this.ReportesProductosPictureBox.SuspendLayout();
-            this.ReportesEmpleados.SuspendLayout();
-            this.ReportesEmpleadosButton.SuspendLayout();
-            this.ReportesEmpleadosPictureBox.SuspendLayout();
-            this.ReportesClientes.SuspendLayout();
-            this.ReportesClientesButton.SuspendLayout();
-            this.ReportesClientesPictureBox.SuspendLayout();
+            this.ReportesCompra.SuspendLayout();
+            this.ReportesCompraButton.SuspendLayout();
+            this.ReportesCompraPictureBox.SuspendLayout();
             this.ReportesVentas.SuspendLayout();
             this.ReportesVentasButton.SuspendLayout();
             this.ReportesVentasPictureBox.SuspendLayout();
@@ -183,9 +178,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.AdministracionInventario.SuspendLayout();
-            this.AdministracionInventarioPictureBox.SuspendLayout();
-            this.AdministracionInventarioButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).BeginInit();
@@ -194,7 +186,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBReporteProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteEmpleados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBReporteCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBReporteVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBSalir)).BeginInit();
@@ -225,6 +216,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.BtnVenta.Text = "Venta";
             this.BtnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnVenta.UseVisualStyleBackColor = true;
+            this.BtnVenta.Click += new System.EventHandler(this.BtnVenta_Click);
             // 
             // PrincipalVentaPictureBox
             // 
@@ -282,6 +274,51 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionContainer.Name = "AdministracionContainer";
             this.AdministracionContainer.Size = new System.Drawing.Size(177, 203);
             this.AdministracionContainer.TabIndex = 6;
+            // 
+            // AdministracionInventario
+            // 
+            this.AdministracionInventario.Controls.Add(this.AdministracionInventarioButton);
+            this.AdministracionInventario.Controls.Add(this.AdministracionInventarioPictureBox);
+            this.AdministracionInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AdministracionInventario.Location = new System.Drawing.Point(0, 167);
+            this.AdministracionInventario.Name = "AdministracionInventario";
+            this.AdministracionInventario.Size = new System.Drawing.Size(177, 36);
+            this.AdministracionInventario.TabIndex = 10;
+            // 
+            // AdministracionInventarioButton
+            // 
+            this.AdministracionInventarioButton.Controls.Add(this.BtnCompra);
+            this.AdministracionInventarioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdministracionInventarioButton.Location = new System.Drawing.Point(37, 0);
+            this.AdministracionInventarioButton.Name = "AdministracionInventarioButton";
+            this.AdministracionInventarioButton.Size = new System.Drawing.Size(140, 36);
+            this.AdministracionInventarioButton.TabIndex = 1;
+            // 
+            // BtnCompra
+            // 
+            this.BtnCompra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCompra.FlatAppearance.BorderSize = 0;
+            this.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCompra.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
+            this.BtnCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCompra.Location = new System.Drawing.Point(0, 0);
+            this.BtnCompra.Name = "BtnCompra";
+            this.BtnCompra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BtnCompra.Size = new System.Drawing.Size(140, 36);
+            this.BtnCompra.TabIndex = 7;
+            this.BtnCompra.Text = "Compra";
+            this.BtnCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCompra.UseVisualStyleBackColor = true;
+            this.BtnCompra.Click += new System.EventHandler(this.BtnCompra_Click);
+            // 
+            // AdministracionInventarioPictureBox
+            // 
+            this.AdministracionInventarioPictureBox.Controls.Add(this.PBInventario);
+            this.AdministracionInventarioPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AdministracionInventarioPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.AdministracionInventarioPictureBox.Name = "AdministracionInventarioPictureBox";
+            this.AdministracionInventarioPictureBox.Size = new System.Drawing.Size(37, 36);
+            this.AdministracionInventarioPictureBox.TabIndex = 0;
             // 
             // AdministracionEmpleados
             // 
@@ -603,21 +640,20 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Reportes.Controls.Add(this.ReportesRight);
             this.Reportes.Location = new System.Drawing.Point(13, 315);
             this.Reportes.Name = "Reportes";
-            this.Reportes.Size = new System.Drawing.Size(197, 187);
+            this.Reportes.Size = new System.Drawing.Size(197, 151);
             this.Reportes.TabIndex = 8;
             // 
             // ReportesContainer
             // 
             this.ReportesContainer.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ReportesContainer.Controls.Add(this.ReportesProductos);
-            this.ReportesContainer.Controls.Add(this.ReportesEmpleados);
-            this.ReportesContainer.Controls.Add(this.ReportesClientes);
+            this.ReportesContainer.Controls.Add(this.ReportesCompra);
             this.ReportesContainer.Controls.Add(this.ReportesVentas);
             this.ReportesContainer.Controls.Add(this.ReportesHeader);
             this.ReportesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ReportesContainer.Location = new System.Drawing.Point(10, 10);
             this.ReportesContainer.Name = "ReportesContainer";
-            this.ReportesContainer.Size = new System.Drawing.Size(177, 167);
+            this.ReportesContainer.Size = new System.Drawing.Size(177, 131);
             this.ReportesContainer.TabIndex = 4;
             // 
             // ReportesProductos
@@ -625,7 +661,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductos.Controls.Add(this.ReportesProductosButton);
             this.ReportesProductos.Controls.Add(this.ReportesProductosPictureBox);
             this.ReportesProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ReportesProductos.Location = new System.Drawing.Point(0, 131);
+            this.ReportesProductos.Location = new System.Drawing.Point(0, 95);
             this.ReportesProductos.Name = "ReportesProductos";
             this.ReportesProductos.Size = new System.Drawing.Size(177, 36);
             this.ReportesProductos.TabIndex = 14;
@@ -652,6 +688,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.BtnReporteProductos.Text = "Productos";
             this.BtnReporteProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnReporteProductos.UseVisualStyleBackColor = true;
+            this.BtnReporteProductos.Click += new System.EventHandler(this.BtnReporteProductos_Click);
             // 
             // ReportesProductosPictureBox
             // 
@@ -662,90 +699,48 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductosPictureBox.Size = new System.Drawing.Size(36, 36);
             this.ReportesProductosPictureBox.TabIndex = 0;
             // 
-            // ReportesEmpleados
+            // ReportesCompra
             // 
-            this.ReportesEmpleados.Controls.Add(this.ReportesEmpleadosButton);
-            this.ReportesEmpleados.Controls.Add(this.ReportesEmpleadosPictureBox);
-            this.ReportesEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ReportesEmpleados.Location = new System.Drawing.Point(0, 95);
-            this.ReportesEmpleados.Name = "ReportesEmpleados";
-            this.ReportesEmpleados.Size = new System.Drawing.Size(177, 36);
-            this.ReportesEmpleados.TabIndex = 13;
+            this.ReportesCompra.Controls.Add(this.ReportesCompraButton);
+            this.ReportesCompra.Controls.Add(this.ReportesCompraPictureBox);
+            this.ReportesCompra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ReportesCompra.Location = new System.Drawing.Point(0, 59);
+            this.ReportesCompra.Name = "ReportesCompra";
+            this.ReportesCompra.Size = new System.Drawing.Size(177, 36);
+            this.ReportesCompra.TabIndex = 12;
             // 
-            // ReportesEmpleadosButton
+            // ReportesCompraButton
             // 
-            this.ReportesEmpleadosButton.Controls.Add(this.BtnReporteEmpleados);
-            this.ReportesEmpleadosButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReportesEmpleadosButton.Location = new System.Drawing.Point(36, 0);
-            this.ReportesEmpleadosButton.Name = "ReportesEmpleadosButton";
-            this.ReportesEmpleadosButton.Size = new System.Drawing.Size(141, 36);
-            this.ReportesEmpleadosButton.TabIndex = 1;
+            this.ReportesCompraButton.Controls.Add(this.BtnReporteCompra);
+            this.ReportesCompraButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReportesCompraButton.Location = new System.Drawing.Point(36, 0);
+            this.ReportesCompraButton.Name = "ReportesCompraButton";
+            this.ReportesCompraButton.Size = new System.Drawing.Size(141, 36);
+            this.ReportesCompraButton.TabIndex = 1;
             // 
-            // BtnReporteEmpleados
+            // BtnReporteCompra
             // 
-            this.BtnReporteEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnReporteEmpleados.FlatAppearance.BorderSize = 0;
-            this.BtnReporteEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnReporteEmpleados.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-            this.BtnReporteEmpleados.Location = new System.Drawing.Point(0, 0);
-            this.BtnReporteEmpleados.Name = "BtnReporteEmpleados";
-            this.BtnReporteEmpleados.Size = new System.Drawing.Size(141, 36);
-            this.BtnReporteEmpleados.TabIndex = 10;
-            this.BtnReporteEmpleados.Text = "Empleados";
-            this.BtnReporteEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnReporteEmpleados.UseVisualStyleBackColor = true;
-            this.BtnReporteEmpleados.Click += new System.EventHandler(this.BtnReporteEmpleados_Click);
+            this.BtnReporteCompra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnReporteCompra.FlatAppearance.BorderSize = 0;
+            this.BtnReporteCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReporteCompra.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
+            this.BtnReporteCompra.Location = new System.Drawing.Point(0, 0);
+            this.BtnReporteCompra.Name = "BtnReporteCompra";
+            this.BtnReporteCompra.Size = new System.Drawing.Size(141, 36);
+            this.BtnReporteCompra.TabIndex = 0;
+            this.BtnReporteCompra.Text = "Compras";
+            this.BtnReporteCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnReporteCompra.UseVisualStyleBackColor = true;
+            this.BtnReporteCompra.Click += new System.EventHandler(this.BtnReporteCompra_Click);
             // 
-            // ReportesEmpleadosPictureBox
+            // ReportesCompraPictureBox
             // 
-            this.ReportesEmpleadosPictureBox.Controls.Add(this.PBReporteEmpleados);
-            this.ReportesEmpleadosPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ReportesEmpleadosPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.ReportesEmpleadosPictureBox.Name = "ReportesEmpleadosPictureBox";
-            this.ReportesEmpleadosPictureBox.Size = new System.Drawing.Size(36, 36);
-            this.ReportesEmpleadosPictureBox.TabIndex = 0;
-            // 
-            // ReportesClientes
-            // 
-            this.ReportesClientes.Controls.Add(this.ReportesClientesButton);
-            this.ReportesClientes.Controls.Add(this.ReportesClientesPictureBox);
-            this.ReportesClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ReportesClientes.Location = new System.Drawing.Point(0, 59);
-            this.ReportesClientes.Name = "ReportesClientes";
-            this.ReportesClientes.Size = new System.Drawing.Size(177, 36);
-            this.ReportesClientes.TabIndex = 12;
-            // 
-            // ReportesClientesButton
-            // 
-            this.ReportesClientesButton.Controls.Add(this.BtnReporteCliente);
-            this.ReportesClientesButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReportesClientesButton.Location = new System.Drawing.Point(36, 0);
-            this.ReportesClientesButton.Name = "ReportesClientesButton";
-            this.ReportesClientesButton.Size = new System.Drawing.Size(141, 36);
-            this.ReportesClientesButton.TabIndex = 1;
-            // 
-            // BtnReporteCliente
-            // 
-            this.BtnReporteCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnReporteCliente.FlatAppearance.BorderSize = 0;
-            this.BtnReporteCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnReporteCliente.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-            this.BtnReporteCliente.Location = new System.Drawing.Point(0, 0);
-            this.BtnReporteCliente.Name = "BtnReporteCliente";
-            this.BtnReporteCliente.Size = new System.Drawing.Size(141, 36);
-            this.BtnReporteCliente.TabIndex = 0;
-            this.BtnReporteCliente.Text = "Clientes";
-            this.BtnReporteCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnReporteCliente.UseVisualStyleBackColor = true;
-            // 
-            // ReportesClientesPictureBox
-            // 
-            this.ReportesClientesPictureBox.Controls.Add(this.PBReporteCliente);
-            this.ReportesClientesPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ReportesClientesPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.ReportesClientesPictureBox.Name = "ReportesClientesPictureBox";
-            this.ReportesClientesPictureBox.Size = new System.Drawing.Size(36, 36);
-            this.ReportesClientesPictureBox.TabIndex = 0;
+            this.ReportesCompraPictureBox.Controls.Add(this.PBReporteCliente);
+            this.ReportesCompraPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ReportesCompraPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.ReportesCompraPictureBox.Name = "ReportesCompraPictureBox";
+            this.ReportesCompraPictureBox.Size = new System.Drawing.Size(36, 36);
+            this.ReportesCompraPictureBox.TabIndex = 0;
             // 
             // ReportesVentas
             // 
@@ -779,6 +774,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.BtnReporteVentas.Text = "Ventas";
             this.BtnReporteVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnReporteVentas.UseVisualStyleBackColor = true;
+            this.BtnReporteVentas.Click += new System.EventHandler(this.BtnReporteVentas_Click);
             // 
             // ReportesVentasPictureBox
             // 
@@ -813,7 +809,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             // ReportesBottom
             // 
             this.ReportesBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ReportesBottom.Location = new System.Drawing.Point(10, 177);
+            this.ReportesBottom.Location = new System.Drawing.Point(10, 141);
             this.ReportesBottom.Name = "ReportesBottom";
             this.ReportesBottom.Size = new System.Drawing.Size(177, 10);
             this.ReportesBottom.TabIndex = 3;
@@ -831,7 +827,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.ReportesLeft.Location = new System.Drawing.Point(0, 0);
             this.ReportesLeft.Name = "ReportesLeft";
-            this.ReportesLeft.Size = new System.Drawing.Size(10, 187);
+            this.ReportesLeft.Size = new System.Drawing.Size(10, 151);
             this.ReportesLeft.TabIndex = 1;
             // 
             // ReportesRight
@@ -839,7 +835,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.ReportesRight.Location = new System.Drawing.Point(187, 0);
             this.ReportesRight.Name = "ReportesRight";
-            this.ReportesRight.Size = new System.Drawing.Size(10, 187);
+            this.ReportesRight.Size = new System.Drawing.Size(10, 151);
             this.ReportesRight.TabIndex = 0;
             // 
             // Sistema
@@ -849,7 +845,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Sistema.Controls.Add(this.SistemaTop);
             this.Sistema.Controls.Add(this.SistemaLeft);
             this.Sistema.Controls.Add(this.SistemaRight);
-            this.Sistema.Location = new System.Drawing.Point(13, 508);
+            this.Sistema.Location = new System.Drawing.Point(13, 472);
             this.Sistema.Name = "Sistema";
             this.Sistema.Size = new System.Drawing.Size(197, 116);
             this.Sistema.TabIndex = 9;
@@ -898,6 +894,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // SistemaSalirPictureBox
             // 
@@ -940,6 +937,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.BtnPerfil.Text = "Perfil";
             this.BtnPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPerfil.UseVisualStyleBackColor = true;
+            this.BtnPerfil.Click += new System.EventHandler(this.BtnPerfil_Click);
             // 
             // SistemaPerfilPictureBox
             // 
@@ -1094,51 +1092,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.LblNameCurrent.Text = "Juan Manuel Martinez Perez";
             this.LblNameCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // AdministracionInventario
-            // 
-            this.AdministracionInventario.Controls.Add(this.AdministracionInventarioButton);
-            this.AdministracionInventario.Controls.Add(this.AdministracionInventarioPictureBox);
-            this.AdministracionInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AdministracionInventario.Location = new System.Drawing.Point(0, 167);
-            this.AdministracionInventario.Name = "AdministracionInventario";
-            this.AdministracionInventario.Size = new System.Drawing.Size(177, 36);
-            this.AdministracionInventario.TabIndex = 10;
-            // 
-            // AdministracionInventarioPictureBox
-            // 
-            this.AdministracionInventarioPictureBox.Controls.Add(this.PBInventario);
-            this.AdministracionInventarioPictureBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.AdministracionInventarioPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.AdministracionInventarioPictureBox.Name = "AdministracionInventarioPictureBox";
-            this.AdministracionInventarioPictureBox.Size = new System.Drawing.Size(37, 36);
-            this.AdministracionInventarioPictureBox.TabIndex = 0;
-            // 
-            // AdministracionInventarioButton
-            // 
-            this.AdministracionInventarioButton.Controls.Add(this.BtnCompra);
-            this.AdministracionInventarioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdministracionInventarioButton.Location = new System.Drawing.Point(37, 0);
-            this.AdministracionInventarioButton.Name = "AdministracionInventarioButton";
-            this.AdministracionInventarioButton.Size = new System.Drawing.Size(140, 36);
-            this.AdministracionInventarioButton.TabIndex = 1;
-            // 
-            // BtnCompra
-            // 
-            this.BtnCompra.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnCompra.FlatAppearance.BorderSize = 0;
-            this.BtnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCompra.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-            this.BtnCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCompra.Location = new System.Drawing.Point(0, 0);
-            this.BtnCompra.Name = "BtnCompra";
-            this.BtnCompra.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnCompra.Size = new System.Drawing.Size(140, 36);
-            this.BtnCompra.TabIndex = 7;
-            this.BtnCompra.Text = "Compra";
-            this.BtnCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCompra.UseVisualStyleBackColor = true;
-            this.BtnCompra.Click += new System.EventHandler(this.BtnCompra_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.LogoBanner1;
@@ -1233,18 +1186,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.PBReporteProductos.TabIndex = 10;
             this.PBReporteProductos.TabStop = false;
             // 
-            // PBReporteEmpleados
-            // 
-            this.PBReporteEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBReporteEmpleados.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Empleados;
-            this.PBReporteEmpleados.Location = new System.Drawing.Point(0, 0);
-            this.PBReporteEmpleados.Name = "PBReporteEmpleados";
-            this.PBReporteEmpleados.Padding = new System.Windows.Forms.Padding(5);
-            this.PBReporteEmpleados.Size = new System.Drawing.Size(36, 36);
-            this.PBReporteEmpleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBReporteEmpleados.TabIndex = 10;
-            this.PBReporteEmpleados.TabStop = false;
-            // 
             // PBReporteCliente
             // 
             this.PBReporteCliente.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1313,6 +1254,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.PrincipalHeader.PerformLayout();
             this.Administracion.ResumeLayout(false);
             this.AdministracionContainer.ResumeLayout(false);
+            this.AdministracionInventario.ResumeLayout(false);
+            this.AdministracionInventarioButton.ResumeLayout(false);
+            this.AdministracionInventarioPictureBox.ResumeLayout(false);
             this.AdministracionEmpleados.ResumeLayout(false);
             this.AdministracionEmpleadosButton.ResumeLayout(false);
             this.AdministracionEmpleadosPictureBox.ResumeLayout(false);
@@ -1336,12 +1280,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductos.ResumeLayout(false);
             this.ReportesProductosButton.ResumeLayout(false);
             this.ReportesProductosPictureBox.ResumeLayout(false);
-            this.ReportesEmpleados.ResumeLayout(false);
-            this.ReportesEmpleadosButton.ResumeLayout(false);
-            this.ReportesEmpleadosPictureBox.ResumeLayout(false);
-            this.ReportesClientes.ResumeLayout(false);
-            this.ReportesClientesButton.ResumeLayout(false);
-            this.ReportesClientesPictureBox.ResumeLayout(false);
+            this.ReportesCompra.ResumeLayout(false);
+            this.ReportesCompraButton.ResumeLayout(false);
+            this.ReportesCompraPictureBox.ResumeLayout(false);
             this.ReportesVentas.ResumeLayout(false);
             this.ReportesVentasButton.ResumeLayout(false);
             this.ReportesVentasPictureBox.ResumeLayout(false);
@@ -1364,9 +1305,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.AdministracionInventario.ResumeLayout(false);
-            this.AdministracionInventarioPictureBox.ResumeLayout(false);
-            this.AdministracionInventarioButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).EndInit();
@@ -1375,7 +1313,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBReporteProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteEmpleados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBReporteCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBReporteVentas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBSalir)).EndInit();
@@ -1443,27 +1380,22 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         private System.Windows.Forms.Panel ReportesVentasPictureBox;
         private System.Windows.Forms.Button BtnReporteVentas;
         private System.Windows.Forms.PictureBox PBReporteVentas;
-        private System.Windows.Forms.Button BtnReporteCliente;
+        private System.Windows.Forms.Button BtnReporteCompra;
         private System.Windows.Forms.Panel ReportesHeader;
         private System.Windows.Forms.Label LblReportes;
         private System.Windows.Forms.Panel SistemaHeader;
         private System.Windows.Forms.Label LblSistema;
-        private System.Windows.Forms.Panel ReportesClientes;
+        private System.Windows.Forms.Panel ReportesCompra;
         private System.Windows.Forms.Panel ReportesVentas;
         private System.Windows.Forms.PictureBox PBReporteCliente;
         private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.Panel ReportesClientesButton;
-        private System.Windows.Forms.Panel ReportesClientesPictureBox;
+        private System.Windows.Forms.Panel ReportesCompraButton;
+        private System.Windows.Forms.Panel ReportesCompraPictureBox;
         private System.Windows.Forms.Panel ReportesProductos;
         private System.Windows.Forms.Panel ReportesProductosButton;
         private System.Windows.Forms.Button BtnReporteProductos;
         private System.Windows.Forms.Panel ReportesProductosPictureBox;
         private System.Windows.Forms.PictureBox PBReporteProductos;
-        private System.Windows.Forms.Panel ReportesEmpleados;
-        private System.Windows.Forms.Panel ReportesEmpleadosButton;
-        private System.Windows.Forms.Button BtnReporteEmpleados;
-        private System.Windows.Forms.Panel ReportesEmpleadosPictureBox;
-        private System.Windows.Forms.PictureBox PBReporteEmpleados;
         private System.Windows.Forms.PictureBox PBSalir;
         private System.Windows.Forms.Panel SistemaSalir;
         private System.Windows.Forms.Panel SistemaSalirButton;

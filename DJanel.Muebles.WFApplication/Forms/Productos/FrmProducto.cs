@@ -212,6 +212,14 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             {
                 await Model.GetAllAsync();
                 IniciarBinding();
+                if(CurrentSession.IdRol == 2)
+                {
+                    this.BtnEliminar.Visible = false;
+                    this.BtnModificar.Visible = false;
+                    this.BtnNuevo.Visible = false;
+                    this.BtnGuardar.Visible = false;
+                    this.UsuarioContainerAC.Visible = false;
+                }
             }
             catch (Exception ex)
             {

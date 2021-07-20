@@ -35,7 +35,6 @@
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.Container = new System.Windows.Forms.Panel();
             this.Body = new System.Windows.Forms.Panel();
-            this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.Footer = new System.Windows.Forms.Panel();
             this.UsuarioFLButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnNuevo = new System.Windows.Forms.Button();
@@ -44,13 +43,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BusquedaControl = new System.Windows.Forms.TextBox();
             this.LblTitulo = new System.Windows.Forms.Label();
+            this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.Container.SuspendLayout();
             this.Body.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.Footer.SuspendLayout();
             this.UsuarioFLButtons.SuspendLayout();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // Container
@@ -72,44 +72,6 @@
             this.Body.Name = "Body";
             this.Body.Size = new System.Drawing.Size(898, 362);
             this.Body.TabIndex = 2;
-            // 
-            // DataGrid
-            // 
-            this.DataGrid.AccessibleName = "Table";
-            this.DataGrid.AllowEditing = false;
-            this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn1.AllowEditing = false;
-            gridTextColumn1.HeaderText = "IdUsuario";
-            gridTextColumn1.MappingName = "IdProveedor";
-            gridTextColumn1.Visible = false;
-            gridTextColumn2.AllowEditing = false;
-            gridTextColumn2.AllowResizing = true;
-            gridTextColumn2.HeaderText = "Nombre de la empresa";
-            gridTextColumn2.MappingName = "Nombre_Empresa";
-            gridTextColumn3.AllowEditing = false;
-            gridTextColumn3.AllowResizing = true;
-            gridTextColumn3.HeaderText = "Nombre del propietario";
-            gridTextColumn3.MappingName = "Nombre_Propietario";
-            gridTextColumn4.AllowEditing = false;
-            gridTextColumn4.AllowResizing = true;
-            gridTextColumn4.HeaderText = "Telefono";
-            gridTextColumn4.MappingName = "Telefono";
-            gridTextColumn5.AllowEditing = false;
-            gridTextColumn5.HeaderText = "Domicilio";
-            gridTextColumn5.MappingName = "Domicilio";
-            this.DataGrid.Columns.Add(gridTextColumn1);
-            this.DataGrid.Columns.Add(gridTextColumn2);
-            this.DataGrid.Columns.Add(gridTextColumn3);
-            this.DataGrid.Columns.Add(gridTextColumn4);
-            this.DataGrid.Columns.Add(gridTextColumn5);
-            this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
-            this.DataGrid.Location = new System.Drawing.Point(0, 0);
-            this.DataGrid.Name = "DataGrid";
-            this.DataGrid.NavigationMode = Syncfusion.WinForms.DataGrid.Enums.NavigationMode.Row;
-            this.DataGrid.Size = new System.Drawing.Size(898, 362);
-            this.DataGrid.TabIndex = 1;
-            this.DataGrid.Text = "sfDataGrid1";
             // 
             // Footer
             // 
@@ -204,6 +166,44 @@
             this.LblTitulo.TabIndex = 0;
             this.LblTitulo.Text = "Proveedor de : Sillas";
             // 
+            // DataGrid
+            // 
+            this.DataGrid.AccessibleName = "Table";
+            this.DataGrid.AllowEditing = false;
+            this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
+            gridTextColumn1.AllowEditing = false;
+            gridTextColumn1.HeaderText = "IdUsuario";
+            gridTextColumn1.MappingName = "IdProveedor";
+            gridTextColumn1.Visible = false;
+            gridTextColumn2.AllowEditing = false;
+            gridTextColumn2.AllowResizing = true;
+            gridTextColumn2.HeaderText = "Nombre de la empresa";
+            gridTextColumn2.MappingName = "Nombre_Empresa";
+            gridTextColumn3.AllowEditing = false;
+            gridTextColumn3.AllowResizing = true;
+            gridTextColumn3.HeaderText = "Nombre del propietario";
+            gridTextColumn3.MappingName = "Nombre_Propietario";
+            gridTextColumn4.AllowEditing = false;
+            gridTextColumn4.AllowResizing = true;
+            gridTextColumn4.HeaderText = "Telefono";
+            gridTextColumn4.MappingName = "Telefono";
+            gridTextColumn5.AllowEditing = false;
+            gridTextColumn5.HeaderText = "Domicilio";
+            gridTextColumn5.MappingName = "Domicilio";
+            this.DataGrid.Columns.Add(gridTextColumn1);
+            this.DataGrid.Columns.Add(gridTextColumn2);
+            this.DataGrid.Columns.Add(gridTextColumn3);
+            this.DataGrid.Columns.Add(gridTextColumn4);
+            this.DataGrid.Columns.Add(gridTextColumn5);
+            this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
+            this.DataGrid.Location = new System.Drawing.Point(0, 0);
+            this.DataGrid.Name = "DataGrid";
+            this.DataGrid.NavigationMode = Syncfusion.WinForms.DataGrid.Enums.NavigationMode.Row;
+            this.DataGrid.Size = new System.Drawing.Size(898, 362);
+            this.DataGrid.TabIndex = 1;
+            this.DataGrid.Text = "sfDataGrid1";
+            // 
             // FrmProveedorGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,12 +217,12 @@
             this.Shown += new System.EventHandler(this.FrmProductosGrid_Shown);
             this.Container.ResumeLayout(false);
             this.Body.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.Footer.ResumeLayout(false);
             this.UsuarioFLButtons.ResumeLayout(false);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }

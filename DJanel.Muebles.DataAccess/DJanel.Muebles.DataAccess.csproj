@@ -54,6 +54,8 @@
     <Compile Include="Repositories\General\ProveedorRepository.cs" />
     <Compile Include="Repositories\General\RolRepository.cs" />
     <Compile Include="Repositories\General\UsuarioRepository.cs" />
+    <Compile Include="Repositories\General\VentaDetalleRepository.cs" />
+    <Compile Include="Repositories\General\VentaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DJanel.Muebles.CrossCutting\DJanel.Muebles.CrossCutting.csproj">

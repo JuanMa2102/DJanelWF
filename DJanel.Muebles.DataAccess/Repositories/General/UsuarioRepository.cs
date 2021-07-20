@@ -66,6 +66,16 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
                         dynamicParameters.Add("@Usuario", IdUsuario);
                         await conexion.ExecuteScalarAsync<int>("[Usuario].[DJanel_Update_Usuario]", param: dynamicParameters, commandType: CommandType.StoredProcedure, transaction: tran);
 
+                        if(element.Password != string.Empty)
+                        {
+                            var dynamicParametersPass = new DynamicParameters();
+                            dynamicParametersPass.Add("@IdUsuario", element.IdUsuario);
+                            dynamicParametersPass.Add("@Password", element.Password);
+                            dynamicParametersPass.Add("@Usuario", IdUsuario);
+                            await conexion.ExecuteScalarAsync<int>("[Usuario].[DJanel_Update_Password]", param: dynamicParametersPass, commandType: CommandType.StoredProcedure, transaction: tran);
+
+                        }
+
                         var dynamicParametersDetail = new DynamicParameters();
                         dynamicParametersDetail.Add("@IdUsuario", element.IdUsuario);
                         dynamicParametersDetail.Add("@Nombre", element.Nombre);

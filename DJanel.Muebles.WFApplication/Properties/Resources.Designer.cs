@@ -63,6 +63,36 @@ namespace DJanel.Muebles.WFApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1SEARCH {
+            get {
+                object obj = ResourceManager.GetObject("1SEARCH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1SEARCH_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("1SEARCH-HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2PLUS {
+            get {
+                object obj = ResourceManager.GetObject("2PLUS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Administracion_Cliente {
             get {
                 object obj = ResourceManager.GetObject("Administracion_Cliente", resourceCulture);
@@ -153,6 +183,96 @@ namespace DJanel.Muebles.WFApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_CHECK {
+            get {
+                object obj = ResourceManager.GetObject("ICON-CHECK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ELIMINAR {
+            get {
+                object obj = ResourceManager.GetObject("ICON-ELIMINAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_ELIMINAR_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("ICON-ELIMINAR-HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_MINUS {
+            get {
+                object obj = ResourceManager.GetObject("ICON-MINUS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_MINUS_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("ICON-MINUS-HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_PLUS {
+            get {
+                object obj = ResourceManager.GetObject("ICON-PLUS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_PLUS_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("ICON-PLUS-HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_SEARCH {
+            get {
+                object obj = ResourceManager.GetObject("ICON-SEARCH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_SEARCH_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("ICON-SEARCH-HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoBanner {
             get {
                 object obj = ResourceManager.GetObject("LogoBanner", resourceCulture);
@@ -166,6 +286,46 @@ namespace DJanel.Muebles.WFApplication.Properties {
         internal static System.Drawing.Bitmap LogoBanner1 {
             get {
                 object obj = ResourceManager.GetObject("LogoBanner1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minus {
+            get {
+                object obj = ResourceManager.GetObject("Minus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Next {
+            get {
+                object obj = ResourceManager.GetObject("Next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NextHover {
+            get {
+                object obj = ResourceManager.GetObject("NextHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PLUS {
+            get {
+                object obj = ResourceManager.GetObject("PLUS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +393,26 @@ namespace DJanel.Muebles.WFApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SEARCH {
+            get {
+                object obj = ResourceManager.GetObject("SEARCH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SEARCH_HOVER {
+            get {
+                object obj = ResourceManager.GetObject("SEARCH-HOVER", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sistema_Perfil {
             get {
                 object obj = ResourceManager.GetObject("Sistema_Perfil", resourceCulture);
@@ -246,6 +426,26 @@ namespace DJanel.Muebles.WFApplication.Properties {
         internal static System.Drawing.Bitmap Sistema_Salir {
             get {
                 object obj = ResourceManager.GetObject("Sistema_Salir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Today {
+            get {
+                object obj = ResourceManager.GetObject("Today", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TodayHover {
+            get {
+                object obj = ResourceManager.GetObject("TodayHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

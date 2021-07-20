@@ -45,6 +45,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueObjects\SelectMode.cs" />
     <Compile Include="ValueObjects\EntityState.cs" />
+    <Compile Include="ViewModelsReports\Compra\CompraReporteViewModel.cs" />
+    <Compile Include="ViewModelsReports\Productos\ProductoReporteViewModel.cs" />
+    <Compile Include="ViewModelsReports\Ticket\TicketViewModel.cs" />
+    <Compile Include="ViewModelsReports\Ventas\VentaReporteViewModel.cs" />
+    <Compile Include="ViewModels\Clientes\ClienteGridViewModel.cs" />
     <Compile Include="ViewModels\Clientes\ClienteViewModel.cs" />
     <Compile Include="ViewModels\Productos\ProductoCompraViewModel.cs" />
     <Compile Include="ViewModels\Productos\ProductoGridViewModel.cs" />
@@ -52,7 +57,9 @@
     <Compile Include="ViewModels\Proveedores\ProveedorGridViewModel.cs" />
     <Compile Include="ViewModels\Proveedores\ProveedorViewModel.cs" />
     <Compile Include="ViewModels\Usuarios\LoginViewModel.cs" />
+    <Compile Include="ViewModels\Usuarios\PerfilViewModel.cs" />
     <Compile Include="ViewModels\Usuarios\UsuarioViewModel.cs" />
+    <Compile Include="ViewModels\Ventas\VentaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DJanel.Muebles.CrossCutting\DJanel.Muebles.CrossCutting.csproj">

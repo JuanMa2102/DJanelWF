@@ -83,6 +83,11 @@
   <ItemGroup>
     <Compile Include="DTOs\ProductoCompra.cs" />
     <Compile Include="DTOs\ProductosProveedor.cs" />
+    <Compile Include="DTOs\ReporteCompra.cs" />
+    <Compile Include="DTOs\ReporteVenta.cs" />
+    <Compile Include="DTOs\ReporteVentaByPeriodo.cs" />
+    <Compile Include="DTOs\Venta.cs" />
+    <Compile Include="DTOs\VentaDetalle.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Producto.cs" />
     <Compile Include="Entities\Proveedor.cs" />
@@ -97,6 +102,8 @@
     <Compile Include="Repositories\General\IProveedorRepository.cs" />
     <Compile Include="Repositories\General\IRolRepository.cs" />
     <Compile Include="Repositories\General\IUsuarioRepository.cs" />
+    <Compile Include="Repositories\General\IVentaDetalleRepository.cs" />
+    <Compile Include="Repositories\General\IVentaRepository.cs" />
     <Compile Include="Validations\Validable.cs" />
     <Compile Include="Validations\ValidatorFactory.cs" />
   </ItemGroup>
@@ -110,8 +117,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

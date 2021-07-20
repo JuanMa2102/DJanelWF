@@ -4,6 +4,10 @@ using DJanel.Muebles.WFApplication.Forms.Clientes;
 using DJanel.Muebles.WFApplication.Forms.Productos;
 using DJanel.Muebles.WFApplication.Forms.Proveedores;
 using DJanel.Muebles.WFApplication.Forms.Usuarios;
+using DJanel.Muebles.WFApplication.Forms.Ventas;
+using DJanel.Muebles.WFApplication.Reports.Compras;
+using DJanel.Muebles.WFApplication.Reports.Productos;
+using DJanel.Muebles.WFApplication.Reports.Ventas;
 using DJanel.Muebles.WFApplication.Session;
 
 namespace DJanel.Muebles.WFApplication.Forms.Home
@@ -19,6 +23,15 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         {
             try
             {
+                LblNameCurrent.Text = CurrentSession.NombreCompleto;
+                LblRolCurrent.Text = CurrentSession.NombreRol;
+                if (CurrentSession.IdRol == 2)
+                {
+                    this.BtnCompra.Enabled = false;
+                    this.BtnEmpleados.Enabled = false;
+                    this.BtnProveedores.Enabled = false;
+                }
+
                 if (this.pnl_Contenedor.Controls.Count > 0)
                 {
                     for (int i = 0; i < pnl_Contenedor.Controls.Count+1; i++)
@@ -58,6 +71,13 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         {
             LblNameCurrent.Text = CurrentSession.NombreCompleto;
             LblRolCurrent.Text = CurrentSession.NombreRol;
+            if (CurrentSession.IdRol == 2)
+            {
+                this.BtnCompra.Enabled = false;
+                this.BtnEmpleados.Enabled = false;
+                this.BtnProveedores.Enabled = false;
+            }
+            GetPanel(new FrmVenta());
         }
 
         private void BtnProveedores_Click(object sender, EventArgs e)
@@ -78,6 +98,36 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         private void BtnCompra_Click(object sender, EventArgs e)
         {
             GetPanel(new FrmProductoCompra());
+        }
+
+        private void BtnVenta_Click(object sender, EventArgs e)
+        {
+            GetPanel(new FrmVenta());
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnReporteVentas_Click(object sender, EventArgs e)
+        {
+            GetPanel(new FrmVentasReporte());
+        }
+
+        private void BtnPerfil_Click(object sender, EventArgs e)
+        {
+            GetPanel(new FrmPerfil());
+        }
+
+        private void BtnReporteCompra_Click(object sender, EventArgs e)
+        {
+            GetPanel(new FrmCompraReporte());
+        }
+
+        private void BtnReporteProductos_Click(object sender, EventArgs e)
+        {
+            GetPanel(new FrmProductosReporte());
         }
     }
 }

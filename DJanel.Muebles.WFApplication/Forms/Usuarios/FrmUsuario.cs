@@ -104,6 +104,27 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
                 throw;
             }
         }
+
+        private void GuardarSession()
+        {
+            try
+            {
+                CurrentSession.Nombre = Model.Nombre;
+                CurrentSession.Apellido_Pat = Model.Apellido_Pat;
+                CurrentSession.Apellido_Mat = Model.Apellido_Mat;
+                CurrentSession.Domicilio = Model.Domicilio;
+                CurrentSession.Username = Model.Username;
+                CurrentSession.IdRol = Model.IdRol;
+                CurrentSession.NombreRol = Model.NombreRol;
+                CurrentSession.NombreCompleto = Model.NombreCompleto;
+                CurrentSession.Telefono = Model.Telefono;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         #endregion
 
         #region Eventos
@@ -123,6 +144,16 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
                     if (Resultado.Resultado == 1)
                     {
                         MessageBox.Show(Messages.SuccessMessage, Messages.SystemName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (Model.IdUsuario == CurrentSession.IdUsuario)
+                        {
+                            await Model.GetAsync(CurrentSession.IdUsuario);
+                            if (Model.IdRol != CurrentSession.IdRol)
+                            {
+                                MessageBox.Show(Messages.CloseSession, Messages.SystemName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                //this.Close();
+                            }
+                            GuardarSession();
+                        }
                         LimpiarPropiedades();
                         DataGridUsuario.Refresh();
                         await Model.GetAllAsync();
@@ -151,7 +182,13 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
                 await Model.LlenarListaRol();
                 await Model.GetAllAsync();
                 IniciarBinding();
-
+                if (CurrentSession.IdRol == 2)
+                {
+                    this.BtnEliminar.Visible = false;
+                    this.BtnModificar.Visible = false;
+                    this.BtnNuevo.Visible = false;
+                    this.BtnGuardar.Visible = false;
+                }
             }
             catch (Exception ex)
             {

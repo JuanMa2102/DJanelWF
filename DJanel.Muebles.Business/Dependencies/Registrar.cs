@@ -15,6 +15,8 @@ namespace DJanel.Muebles.Business.Dependencies
             ServiceLocator.Instance.Register<ProductoRepository, IProductoRepository>();
             ServiceLocator.Instance.Register<ProductoCompraRepository, IProductoCompraRepository>();
             ServiceLocator.Instance.Register<ClienteRepository, IClienteRepository>();
+            ServiceLocator.Instance.Register<VentaRepository, IVentaRepository>();
+            ServiceLocator.Instance.Register<VentaDetalleRepository, IVentaDetalleRepository>();
         }
     }
 }

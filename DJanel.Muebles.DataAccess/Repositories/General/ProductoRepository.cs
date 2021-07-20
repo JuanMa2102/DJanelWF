@@ -157,6 +157,46 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
             }
         }
 
+        public async Task<int> GetStockAsync(int IdProducto)
+        {
+            try
+            {
+                using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+                {
+                    conexion.Open();
+                    var dynamicParametersStockXID = new DynamicParameters();
+                    dynamicParametersStockXID.Add("@IdProducto", IdProducto);
+                    var StockActual = await conexion.ExecuteScalarAsync<int>("[Producto].[DJanel_Get_StockProductoXID]", param: dynamicParametersStockXID, commandType: CommandType.StoredProcedure);
+
+                    return StockActual;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public async Task<IEnumerable<Producto>> GetProductoReporte()
+        {
+            try
+            {
+                using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+                {
+                    conexion.Open();
+                    var dynamicParameters = new DynamicParameters();
+                    var result = await conexion.QueryAsync<Producto>("[Producto].[DJanel_Get_ReporteProducto]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         #region Metodos no implementados
         public Task<Producto> GetAsync(object id)
         {

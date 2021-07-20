@@ -9,5 +9,7 @@ namespace DJanel.Muebles.DataAccess.Contracts.Repositories.General
     {
         Task<int> ClaveExist(string Busqueda);
         Task<IEnumerable<Producto>> Busqueda(string Busqueda);
+        Task<IEnumerable<Producto>> GetProductoReporte();
+        Task<int> GetStockAsync(int IdProducto);
     }
 }

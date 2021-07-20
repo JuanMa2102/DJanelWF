@@ -122,6 +122,18 @@ namespace DJanel.Muebles.DataAccess.Repositories.General
         {
             throw new System.NotImplementedException();
         }
-        
+
+        public async  Task<IEnumerable<Cliente>> Busqueda(string Busqueda)
+        {
+            using (IDbConnection conexion = new SqlConnection(WebConnectionString))
+            {
+                conexion.Open();
+                var dynamicParameters = new DynamicParameters();
+                dynamicParameters.Add("@Busqueda", Busqueda);
+                var result = await conexion.QueryAsync<Cliente>("[Cliente].[DJanel_Busqueda_Cliente]", param: dynamicParameters, commandType: CommandType.StoredProcedure);
+
+                return result;
+            }
+        }
     }
 }

@@ -111,6 +111,29 @@ namespace DJanel.Muebles.Business.ViewModels.Usuarios
                 throw ex;
             }
         }
+
+        public async Task GetAsync(int Idusuario)
+        {
+            try
+            {
+                var x = await UsuarioRepository.GetAsync(Idusuario);
+                IdUsuario = x.IdUsuario;
+                Nombre = x.Nombre;
+                Apellido_Pat = x.Apellido_Pat;
+                Apellido_Mat = x.Apellido_Mat;
+                Domicilio = x.Domicilio;
+                Telefono = x.Telefono;
+                Username = x.Username;
+                IdRol = x.DatosRol.IdRol;
+                NombreRol = x.DatosRol.Nombre;
+                NombreCompleto = x.Nombre + " " + x.Apellido_Pat + " " + x.Apellido_Mat;
+                Password = "";
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         #endregion
 
         #region Binding(Variables)
@@ -124,6 +147,19 @@ namespace DJanel.Muebles.Business.ViewModels.Usuarios
             {
                 _IdRol = value;
                 OnPropertyChanged(nameof(IdRol));
+
+            }
+        }
+
+        private string _NombreRol;
+
+        public string NombreRol
+        {
+            get { return _NombreRol; }
+            set
+            {
+                _NombreRol = value;
+                OnPropertyChanged(nameof(NombreRol));
 
             }
         }

@@ -43,6 +43,9 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.UsuarioACPanel = new System.Windows.Forms.Panel();
             this.GBoxFormulario = new System.Windows.Forms.GroupBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.TelefonoControl = new System.Windows.Forms.TextBox();
+            this.Fecha_NacControl = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DomicilioControl = new System.Windows.Forms.TextBox();
@@ -64,9 +67,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.UsuarioContainerAC = new System.Windows.Forms.Panel();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.Fecha_NacControl = new System.Windows.Forms.DateTimePicker();
-            this.TelefonoControl = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.UsuarioFLButtons.SuspendLayout();
             this.UsuarioACPanel.SuspendLayout();
@@ -90,11 +90,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             // 
             // UsuarioFLButtons
             // 
-            this.UsuarioFLButtons.Controls.Add(this.BtnNuevo);
-            this.UsuarioFLButtons.Controls.Add(this.BtnModificar);
-            this.UsuarioFLButtons.Controls.Add(this.BtnEliminar);
             this.UsuarioFLButtons.Controls.Add(this.BtnGuardar);
+            this.UsuarioFLButtons.Controls.Add(this.BtnEliminar);
+            this.UsuarioFLButtons.Controls.Add(this.BtnModificar);
+            this.UsuarioFLButtons.Controls.Add(this.BtnNuevo);
             this.UsuarioFLButtons.Dock = System.Windows.Forms.DockStyle.Right;
+            this.UsuarioFLButtons.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.UsuarioFLButtons.Location = new System.Drawing.Point(879, 0);
             this.UsuarioFLButtons.Name = "UsuarioFLButtons";
             this.UsuarioFLButtons.Padding = new System.Windows.Forms.Padding(5, 10, 0, 5);
@@ -107,7 +108,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNuevo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.BtnNuevo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnNuevo.Location = new System.Drawing.Point(8, 13);
+            this.BtnNuevo.Location = new System.Drawing.Point(14, 13);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(93, 32);
             this.BtnNuevo.TabIndex = 15;
@@ -121,7 +122,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.BtnModificar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnModificar.Location = new System.Drawing.Point(107, 13);
+            this.BtnModificar.Location = new System.Drawing.Point(113, 13);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(103, 32);
             this.BtnModificar.TabIndex = 14;
@@ -135,7 +136,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.BtnEliminar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnEliminar.Location = new System.Drawing.Point(216, 13);
+            this.BtnEliminar.Location = new System.Drawing.Point(222, 13);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(92, 32);
             this.BtnEliminar.TabIndex = 13;
@@ -149,7 +150,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.BtnGuardar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnGuardar.Location = new System.Drawing.Point(314, 13);
+            this.BtnGuardar.Location = new System.Drawing.Point(320, 13);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(93, 32);
             this.BtnGuardar.TabIndex = 12;
@@ -196,6 +197,38 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.GBoxFormulario.TabIndex = 40;
             this.GBoxFormulario.TabStop = false;
             this.GBoxFormulario.Text = "Nuevo Cliente";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
+            this.panel5.Location = new System.Drawing.Point(378, 192);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(229, 2);
+            this.panel5.TabIndex = 19;
+            // 
+            // TelefonoControl
+            // 
+            this.TelefonoControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TelefonoControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.TelefonoControl.ForeColor = System.Drawing.Color.Black;
+            this.TelefonoControl.Location = new System.Drawing.Point(386, 169);
+            this.TelefonoControl.MaxLength = 10;
+            this.TelefonoControl.Multiline = true;
+            this.TelefonoControl.Name = "TelefonoControl";
+            this.TelefonoControl.Size = new System.Drawing.Size(221, 27);
+            this.TelefonoControl.TabIndex = 41;
+            // 
+            // Fecha_NacControl
+            // 
+            this.Fecha_NacControl.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.Fecha_NacControl.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Fecha_NacControl.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.Fecha_NacControl.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha_NacControl.Location = new System.Drawing.Point(377, 76);
+            this.Fecha_NacControl.Name = "Fecha_NacControl";
+            this.Fecha_NacControl.Size = new System.Drawing.Size(230, 24);
+            this.Fecha_NacControl.TabIndex = 40;
+            this.Fecha_NacControl.Value = new System.DateTime(2021, 7, 12, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -425,38 +458,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             // 
             this.errorProvider.BlinkRate = 50;
             this.errorProvider.ContainerControl = this;
-            // 
-            // Fecha_NacControl
-            // 
-            this.Fecha_NacControl.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.Fecha_NacControl.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Fecha_NacControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.Fecha_NacControl.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fecha_NacControl.Location = new System.Drawing.Point(377, 76);
-            this.Fecha_NacControl.Name = "Fecha_NacControl";
-            this.Fecha_NacControl.Size = new System.Drawing.Size(230, 24);
-            this.Fecha_NacControl.TabIndex = 40;
-            this.Fecha_NacControl.Value = new System.DateTime(2021, 7, 12, 0, 0, 0, 0);
-            // 
-            // TelefonoControl
-            // 
-            this.TelefonoControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TelefonoControl.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.TelefonoControl.ForeColor = System.Drawing.Color.Black;
-            this.TelefonoControl.Location = new System.Drawing.Point(386, 169);
-            this.TelefonoControl.MaxLength = 10;
-            this.TelefonoControl.Multiline = true;
-            this.TelefonoControl.Name = "TelefonoControl";
-            this.TelefonoControl.Size = new System.Drawing.Size(221, 27);
-            this.TelefonoControl.TabIndex = 41;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
-            this.panel5.Location = new System.Drawing.Point(378, 192);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(229, 2);
-            this.panel5.TabIndex = 19;
             // 
             // FrmCliente
             // 

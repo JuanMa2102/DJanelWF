@@ -43,5 +43,9 @@ namespace DJanel.Muebles.WFApplication.Constants
         public const string ErroNotSelectProducto = "DEBE SELECCIONAR UN PRODUCTO";
         public const string ErroAlmacenProducto = "NO SE PUEDE ELIMNAR LA COMPRA NO HAY SUFICIENTES PRODUCTOS EN ALMACEN";
         public const string ErrorNotSelectProveedor = "DEBE SELECCIONAR UN PROVEEDOR";
+        public const string ErrorProductNotFound = "NO SE ENCONTRO UN PRODUCTO CON ESA CLAVE";
+        public const string ErrorStockVenta = "NO SE PUEDE REALIZAR LA VENTA, PRODUCTO INSUFICIENTE";
+        public const string ErrorStock = "NO HAY PRODUCTOS SUFICIENTES EN STOCK";
+        public const string CloseSession = "SE MODIFICO SU PROPIO ROL, PARA QUE LOS CAMBIOS SE VEAN REFLEJADOS DEBE INICIAR SESION NUEVAMENTE";
     }
 }

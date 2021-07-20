@@ -3,6 +3,11 @@ using DJanel.Muebles.Business.ViewModels.Clientes;
 using DJanel.Muebles.Business.ViewModels.Productos;
 using DJanel.Muebles.Business.ViewModels.Proveedores;
 using DJanel.Muebles.Business.ViewModels.Usuarios;
+using DJanel.Muebles.Business.ViewModels.Ventas;
+using DJanel.Muebles.Business.ViewModelsReports.Compra;
+using DJanel.Muebles.Business.ViewModelsReports.Productos;
+using DJanel.Muebles.Business.ViewModelsReports.Ticket;
+using DJanel.Muebles.Business.ViewModelsReports.Ventas;
 using DJanel.Muebles.CrossCutting.Services;
 using DJanel.Muebles.DataAccess.Contracts.Validations;
 using DJanel.Muebles.WFApplication.Forms.Usuarios;
@@ -50,6 +55,8 @@ namespace DJanel.Muebles.WFApplication
             ServiceLocator.Instance.Register<ProductoValidator, IValidator<ProductoViewModel>>();
             ServiceLocator.Instance.Register<ProductoCompraValidator, IValidator<ProductoCompraViewModel>>();
             ServiceLocator.Instance.Register<ClienteValidator, IValidator<ClienteViewModel>>();
+            ServiceLocator.Instance.Register<VentaValidator, IValidator<VentaViewModel>>();
+            ServiceLocator.Instance.Register<PerfilValidator, IValidator<PerfilViewModel>>();
         }
 
         private static void RegisterViewModelDependencies()
@@ -63,6 +70,16 @@ namespace DJanel.Muebles.WFApplication
             ServiceLocator.Instance.Register<ProductoGridViewModel>();
             ServiceLocator.Instance.Register<ProductoCompraViewModel>();
             ServiceLocator.Instance.Register<ClienteViewModel>();
+            ServiceLocator.Instance.Register<ClienteGridViewModel>();
+            ServiceLocator.Instance.Register<VentaViewModel>();
+            ServiceLocator.Instance.Register<PerfilViewModel>();
+
+            /*---------------------REPORTES----------------------------*/
+            
+            ServiceLocator.Instance.Register<VentaReporteViewModel>();
+            ServiceLocator.Instance.Register<CompraReporteViewModel>();
+            ServiceLocator.Instance.Register<TicketViewModel>();
+            ServiceLocator.Instance.Register<ProductoReporteViewModel>();
         }
     }
 }
