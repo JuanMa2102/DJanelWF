@@ -36,7 +36,8 @@ namespace DJanel.Muebles.Business.ViewModels.Clientes
                 ListaClientes.Clear();
                 foreach (var item in x)
                 {
-                    ListaClientes.Add(item);
+                    if(item.IdCliente != 0)
+                        ListaClientes.Add(item);
                 }
             }
             catch (Exception ex)
