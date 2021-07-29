@@ -29,9 +29,11 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.PrincipalPanelButton = new System.Windows.Forms.Panel();
             this.BtnVenta = new System.Windows.Forms.Button();
             this.PrincipalVentaPictureBox = new System.Windows.Forms.Panel();
+            this.PBVenta = new System.Windows.Forms.PictureBox();
             this.PrincipalHeader = new System.Windows.Forms.Panel();
             this.LblPrincipal = new System.Windows.Forms.Label();
             this.Administracion = new System.Windows.Forms.Panel();
@@ -40,22 +42,27 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionInventarioButton = new System.Windows.Forms.Panel();
             this.BtnCompra = new System.Windows.Forms.Button();
             this.AdministracionInventarioPictureBox = new System.Windows.Forms.Panel();
+            this.PBInventario = new System.Windows.Forms.PictureBox();
             this.AdministracionEmpleados = new System.Windows.Forms.Panel();
             this.AdministracionEmpleadosButton = new System.Windows.Forms.Panel();
             this.BtnEmpleados = new System.Windows.Forms.Button();
             this.AdministracionEmpleadosPictureBox = new System.Windows.Forms.Panel();
+            this.PBEmpleados = new System.Windows.Forms.PictureBox();
             this.AdministracionProveedores = new System.Windows.Forms.Panel();
             this.AdministracionProveedorButton = new System.Windows.Forms.Panel();
             this.BtnProveedores = new System.Windows.Forms.Button();
             this.AdministracionProveedorPictureBox = new System.Windows.Forms.Panel();
+            this.AdministracionProveedoresPictureBox = new System.Windows.Forms.PictureBox();
             this.AdministracionProductos = new System.Windows.Forms.Panel();
             this.AdministracionProductosButton = new System.Windows.Forms.Panel();
             this.BtnProductos = new System.Windows.Forms.Button();
             this.AdministracionProductosPictureBox = new System.Windows.Forms.Panel();
+            this.PBProductos = new System.Windows.Forms.PictureBox();
             this.AdministracionCliente = new System.Windows.Forms.Panel();
             this.AdministracionClientePanelButton = new System.Windows.Forms.Panel();
             this.BtnCliente = new System.Windows.Forms.Button();
             this.AdministracionClientePanelPictureBox = new System.Windows.Forms.Panel();
+            this.PBCliente = new System.Windows.Forms.PictureBox();
             this.AdministracionHeader = new System.Windows.Forms.Panel();
             this.LblAdministracion = new System.Windows.Forms.Label();
             this.AdministracionTop = new System.Windows.Forms.Panel();
@@ -76,14 +83,17 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductosButton = new System.Windows.Forms.Panel();
             this.BtnReporteProductos = new System.Windows.Forms.Button();
             this.ReportesProductosPictureBox = new System.Windows.Forms.Panel();
+            this.PBReporteProductos = new System.Windows.Forms.PictureBox();
             this.ReportesCompra = new System.Windows.Forms.Panel();
             this.ReportesCompraButton = new System.Windows.Forms.Panel();
             this.BtnReporteCompra = new System.Windows.Forms.Button();
             this.ReportesCompraPictureBox = new System.Windows.Forms.Panel();
+            this.PBReporteCliente = new System.Windows.Forms.PictureBox();
             this.ReportesVentas = new System.Windows.Forms.Panel();
             this.ReportesVentasButton = new System.Windows.Forms.Panel();
             this.BtnReporteVentas = new System.Windows.Forms.Button();
             this.ReportesVentasPictureBox = new System.Windows.Forms.Panel();
+            this.PBReporteVentas = new System.Windows.Forms.PictureBox();
             this.ReportesHeader = new System.Windows.Forms.Panel();
             this.LblReportes = new System.Windows.Forms.Label();
             this.ReportesBottom = new System.Windows.Forms.Panel();
@@ -96,10 +106,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.SistemaSalirButton = new System.Windows.Forms.Panel();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.SistemaSalirPictureBox = new System.Windows.Forms.Panel();
+            this.PBSalir = new System.Windows.Forms.PictureBox();
             this.SistemaPerfil = new System.Windows.Forms.Panel();
             this.SistemaPerfilButton = new System.Windows.Forms.Panel();
             this.BtnPerfil = new System.Windows.Forms.Button();
             this.SistemaPerfilPictureBox = new System.Windows.Forms.Panel();
+            this.PBPerfil = new System.Windows.Forms.PictureBox();
             this.SistemaHeader = new System.Windows.Forms.Panel();
             this.LblSistema = new System.Windows.Forms.Label();
             this.SistemaBottom = new System.Windows.Forms.Panel();
@@ -114,39 +126,34 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.LblRolCurrent = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.LblNameCurrent = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PBVenta = new System.Windows.Forms.PictureBox();
-            this.PBInventario = new System.Windows.Forms.PictureBox();
-            this.PBEmpleados = new System.Windows.Forms.PictureBox();
-            this.AdministracionProveedoresPictureBox = new System.Windows.Forms.PictureBox();
-            this.PBProductos = new System.Windows.Forms.PictureBox();
-            this.PBCliente = new System.Windows.Forms.PictureBox();
-            this.PBReporteProductos = new System.Windows.Forms.PictureBox();
-            this.PBReporteCliente = new System.Windows.Forms.PictureBox();
-            this.PBReporteVentas = new System.Windows.Forms.PictureBox();
-            this.PBSalir = new System.Windows.Forms.PictureBox();
-            this.PBPerfil = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.PrincipalPanelButton.SuspendLayout();
             this.PrincipalVentaPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).BeginInit();
             this.PrincipalHeader.SuspendLayout();
             this.Administracion.SuspendLayout();
             this.AdministracionContainer.SuspendLayout();
             this.AdministracionInventario.SuspendLayout();
             this.AdministracionInventarioButton.SuspendLayout();
             this.AdministracionInventarioPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).BeginInit();
             this.AdministracionEmpleados.SuspendLayout();
             this.AdministracionEmpleadosButton.SuspendLayout();
             this.AdministracionEmpleadosPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBEmpleados)).BeginInit();
             this.AdministracionProveedores.SuspendLayout();
             this.AdministracionProveedorButton.SuspendLayout();
             this.AdministracionProveedorPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AdministracionProveedoresPictureBox)).BeginInit();
             this.AdministracionProductos.SuspendLayout();
             this.AdministracionProductosButton.SuspendLayout();
             this.AdministracionProductosPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).BeginInit();
             this.AdministracionCliente.SuspendLayout();
             this.AdministracionClientePanelButton.SuspendLayout();
             this.AdministracionClientePanelPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBCliente)).BeginInit();
             this.AdministracionHeader.SuspendLayout();
             this.FLPanelContainerMenu.SuspendLayout();
             this.Principal.SuspendLayout();
@@ -157,21 +164,26 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductos.SuspendLayout();
             this.ReportesProductosButton.SuspendLayout();
             this.ReportesProductosPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBReporteProductos)).BeginInit();
             this.ReportesCompra.SuspendLayout();
             this.ReportesCompraButton.SuspendLayout();
             this.ReportesCompraPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBReporteCliente)).BeginInit();
             this.ReportesVentas.SuspendLayout();
             this.ReportesVentasButton.SuspendLayout();
             this.ReportesVentasPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBReporteVentas)).BeginInit();
             this.ReportesHeader.SuspendLayout();
             this.Sistema.SuspendLayout();
             this.SistemaContainer.SuspendLayout();
             this.SistemaSalir.SuspendLayout();
             this.SistemaSalirButton.SuspendLayout();
             this.SistemaSalirPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBSalir)).BeginInit();
             this.SistemaPerfil.SuspendLayout();
             this.SistemaPerfilButton.SuspendLayout();
             this.SistemaPerfilPictureBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBPerfil)).BeginInit();
             this.SistemaHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.UsuarioHeader.SuspendLayout();
@@ -179,17 +191,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBEmpleados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AdministracionProveedoresPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBCliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteCliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteVentas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBSalir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // PrincipalPanelButton
@@ -226,6 +227,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.PrincipalVentaPictureBox.Name = "PrincipalVentaPictureBox";
             this.PrincipalVentaPictureBox.Size = new System.Drawing.Size(36, 36);
             this.PrincipalVentaPictureBox.TabIndex = 0;
+            // 
+            // PBVenta
+            // 
+            this.PBVenta.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBVenta.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Principal_Venta;
+            this.PBVenta.Location = new System.Drawing.Point(0, 0);
+            this.PBVenta.Name = "PBVenta";
+            this.PBVenta.Padding = new System.Windows.Forms.Padding(5);
+            this.PBVenta.Size = new System.Drawing.Size(36, 36);
+            this.PBVenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBVenta.TabIndex = 0;
+            this.PBVenta.TabStop = false;
             // 
             // PrincipalHeader
             // 
@@ -320,6 +333,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionInventarioPictureBox.Size = new System.Drawing.Size(37, 36);
             this.AdministracionInventarioPictureBox.TabIndex = 0;
             // 
+            // PBInventario
+            // 
+            this.PBInventario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBInventario.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Inventario;
+            this.PBInventario.Location = new System.Drawing.Point(0, 0);
+            this.PBInventario.Name = "PBInventario";
+            this.PBInventario.Padding = new System.Windows.Forms.Padding(5);
+            this.PBInventario.Size = new System.Drawing.Size(37, 36);
+            this.PBInventario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBInventario.TabIndex = 1;
+            this.PBInventario.TabStop = false;
+            // 
             // AdministracionEmpleados
             // 
             this.AdministracionEmpleados.Controls.Add(this.AdministracionEmpleadosButton);
@@ -364,6 +389,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionEmpleadosPictureBox.Name = "AdministracionEmpleadosPictureBox";
             this.AdministracionEmpleadosPictureBox.Size = new System.Drawing.Size(37, 36);
             this.AdministracionEmpleadosPictureBox.TabIndex = 0;
+            // 
+            // PBEmpleados
+            // 
+            this.PBEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBEmpleados.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Empleados;
+            this.PBEmpleados.Location = new System.Drawing.Point(0, 0);
+            this.PBEmpleados.Name = "PBEmpleados";
+            this.PBEmpleados.Padding = new System.Windows.Forms.Padding(5);
+            this.PBEmpleados.Size = new System.Drawing.Size(37, 36);
+            this.PBEmpleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBEmpleados.TabIndex = 0;
+            this.PBEmpleados.TabStop = false;
             // 
             // AdministracionProveedores
             // 
@@ -410,6 +447,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionProveedorPictureBox.Size = new System.Drawing.Size(37, 36);
             this.AdministracionProveedorPictureBox.TabIndex = 0;
             // 
+            // AdministracionProveedoresPictureBox
+            // 
+            this.AdministracionProveedoresPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdministracionProveedoresPictureBox.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Provedor;
+            this.AdministracionProveedoresPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.AdministracionProveedoresPictureBox.Name = "AdministracionProveedoresPictureBox";
+            this.AdministracionProveedoresPictureBox.Padding = new System.Windows.Forms.Padding(5);
+            this.AdministracionProveedoresPictureBox.Size = new System.Drawing.Size(37, 36);
+            this.AdministracionProveedoresPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdministracionProveedoresPictureBox.TabIndex = 0;
+            this.AdministracionProveedoresPictureBox.TabStop = false;
+            // 
             // AdministracionProductos
             // 
             this.AdministracionProductos.Controls.Add(this.AdministracionProductosButton);
@@ -455,6 +504,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionProductosPictureBox.Size = new System.Drawing.Size(37, 36);
             this.AdministracionProductosPictureBox.TabIndex = 0;
             // 
+            // PBProductos
+            // 
+            this.PBProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBProductos.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Productos;
+            this.PBProductos.Location = new System.Drawing.Point(0, 0);
+            this.PBProductos.Name = "PBProductos";
+            this.PBProductos.Padding = new System.Windows.Forms.Padding(5);
+            this.PBProductos.Size = new System.Drawing.Size(37, 36);
+            this.PBProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBProductos.TabIndex = 0;
+            this.PBProductos.TabStop = false;
+            // 
             // AdministracionCliente
             // 
             this.AdministracionCliente.Controls.Add(this.AdministracionClientePanelButton);
@@ -499,6 +560,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionClientePanelPictureBox.Name = "AdministracionClientePanelPictureBox";
             this.AdministracionClientePanelPictureBox.Size = new System.Drawing.Size(37, 36);
             this.AdministracionClientePanelPictureBox.TabIndex = 0;
+            // 
+            // PBCliente
+            // 
+            this.PBCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBCliente.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Cliente;
+            this.PBCliente.Location = new System.Drawing.Point(0, 0);
+            this.PBCliente.Name = "PBCliente";
+            this.PBCliente.Padding = new System.Windows.Forms.Padding(5);
+            this.PBCliente.Size = new System.Drawing.Size(37, 36);
+            this.PBCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBCliente.TabIndex = 0;
+            this.PBCliente.TabStop = false;
             // 
             // AdministracionHeader
             // 
@@ -699,6 +772,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductosPictureBox.Size = new System.Drawing.Size(36, 36);
             this.ReportesProductosPictureBox.TabIndex = 0;
             // 
+            // PBReporteProductos
+            // 
+            this.PBReporteProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBReporteProductos.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Productos;
+            this.PBReporteProductos.Location = new System.Drawing.Point(0, 0);
+            this.PBReporteProductos.Name = "PBReporteProductos";
+            this.PBReporteProductos.Padding = new System.Windows.Forms.Padding(5);
+            this.PBReporteProductos.Size = new System.Drawing.Size(36, 36);
+            this.PBReporteProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBReporteProductos.TabIndex = 10;
+            this.PBReporteProductos.TabStop = false;
+            // 
             // ReportesCompra
             // 
             this.ReportesCompra.Controls.Add(this.ReportesCompraButton);
@@ -742,6 +827,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesCompraPictureBox.Size = new System.Drawing.Size(36, 36);
             this.ReportesCompraPictureBox.TabIndex = 0;
             // 
+            // PBReporteCliente
+            // 
+            this.PBReporteCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBReporteCliente.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Clientes;
+            this.PBReporteCliente.Location = new System.Drawing.Point(0, 0);
+            this.PBReporteCliente.Name = "PBReporteCliente";
+            this.PBReporteCliente.Padding = new System.Windows.Forms.Padding(5);
+            this.PBReporteCliente.Size = new System.Drawing.Size(36, 36);
+            this.PBReporteCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBReporteCliente.TabIndex = 0;
+            this.PBReporteCliente.TabStop = false;
+            // 
             // ReportesVentas
             // 
             this.ReportesVentas.Controls.Add(this.ReportesVentasButton);
@@ -784,6 +881,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesVentasPictureBox.Name = "ReportesVentasPictureBox";
             this.ReportesVentasPictureBox.Size = new System.Drawing.Size(36, 36);
             this.ReportesVentasPictureBox.TabIndex = 0;
+            // 
+            // PBReporteVentas
+            // 
+            this.PBReporteVentas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBReporteVentas.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Ventas;
+            this.PBReporteVentas.Location = new System.Drawing.Point(0, 0);
+            this.PBReporteVentas.Name = "PBReporteVentas";
+            this.PBReporteVentas.Padding = new System.Windows.Forms.Padding(5);
+            this.PBReporteVentas.Size = new System.Drawing.Size(36, 36);
+            this.PBReporteVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBReporteVentas.TabIndex = 0;
+            this.PBReporteVentas.TabStop = false;
             // 
             // ReportesHeader
             // 
@@ -905,6 +1014,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.SistemaSalirPictureBox.Size = new System.Drawing.Size(36, 36);
             this.SistemaSalirPictureBox.TabIndex = 0;
             // 
+            // PBSalir
+            // 
+            this.PBSalir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBSalir.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Sistema_Salir;
+            this.PBSalir.Location = new System.Drawing.Point(0, 0);
+            this.PBSalir.Name = "PBSalir";
+            this.PBSalir.Padding = new System.Windows.Forms.Padding(5);
+            this.PBSalir.Size = new System.Drawing.Size(36, 36);
+            this.PBSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBSalir.TabIndex = 1;
+            this.PBSalir.TabStop = false;
+            // 
             // SistemaPerfil
             // 
             this.SistemaPerfil.Controls.Add(this.SistemaPerfilButton);
@@ -947,6 +1068,18 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.SistemaPerfilPictureBox.Name = "SistemaPerfilPictureBox";
             this.SistemaPerfilPictureBox.Size = new System.Drawing.Size(36, 36);
             this.SistemaPerfilPictureBox.TabIndex = 0;
+            // 
+            // PBPerfil
+            // 
+            this.PBPerfil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBPerfil.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Sistema_Perfil;
+            this.PBPerfil.Location = new System.Drawing.Point(0, 0);
+            this.PBPerfil.Name = "PBPerfil";
+            this.PBPerfil.Padding = new System.Windows.Forms.Padding(5);
+            this.PBPerfil.Size = new System.Drawing.Size(36, 36);
+            this.PBPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBPerfil.TabIndex = 10;
+            this.PBPerfil.TabStop = false;
             // 
             // SistemaHeader
             // 
@@ -1102,138 +1235,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // PBVenta
-            // 
-            this.PBVenta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBVenta.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Principal_Venta;
-            this.PBVenta.Location = new System.Drawing.Point(0, 0);
-            this.PBVenta.Name = "PBVenta";
-            this.PBVenta.Padding = new System.Windows.Forms.Padding(5);
-            this.PBVenta.Size = new System.Drawing.Size(36, 36);
-            this.PBVenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBVenta.TabIndex = 0;
-            this.PBVenta.TabStop = false;
-            // 
-            // PBInventario
-            // 
-            this.PBInventario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBInventario.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Inventario;
-            this.PBInventario.Location = new System.Drawing.Point(0, 0);
-            this.PBInventario.Name = "PBInventario";
-            this.PBInventario.Padding = new System.Windows.Forms.Padding(5);
-            this.PBInventario.Size = new System.Drawing.Size(37, 36);
-            this.PBInventario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBInventario.TabIndex = 1;
-            this.PBInventario.TabStop = false;
-            // 
-            // PBEmpleados
-            // 
-            this.PBEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBEmpleados.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Empleados;
-            this.PBEmpleados.Location = new System.Drawing.Point(0, 0);
-            this.PBEmpleados.Name = "PBEmpleados";
-            this.PBEmpleados.Padding = new System.Windows.Forms.Padding(5);
-            this.PBEmpleados.Size = new System.Drawing.Size(37, 36);
-            this.PBEmpleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBEmpleados.TabIndex = 0;
-            this.PBEmpleados.TabStop = false;
-            // 
-            // AdministracionProveedoresPictureBox
-            // 
-            this.AdministracionProveedoresPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdministracionProveedoresPictureBox.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Provedor;
-            this.AdministracionProveedoresPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.AdministracionProveedoresPictureBox.Name = "AdministracionProveedoresPictureBox";
-            this.AdministracionProveedoresPictureBox.Padding = new System.Windows.Forms.Padding(5);
-            this.AdministracionProveedoresPictureBox.Size = new System.Drawing.Size(37, 36);
-            this.AdministracionProveedoresPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AdministracionProveedoresPictureBox.TabIndex = 0;
-            this.AdministracionProveedoresPictureBox.TabStop = false;
-            // 
-            // PBProductos
-            // 
-            this.PBProductos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBProductos.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Productos;
-            this.PBProductos.Location = new System.Drawing.Point(0, 0);
-            this.PBProductos.Name = "PBProductos";
-            this.PBProductos.Padding = new System.Windows.Forms.Padding(5);
-            this.PBProductos.Size = new System.Drawing.Size(37, 36);
-            this.PBProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBProductos.TabIndex = 0;
-            this.PBProductos.TabStop = false;
-            // 
-            // PBCliente
-            // 
-            this.PBCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBCliente.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Administracion_Cliente;
-            this.PBCliente.Location = new System.Drawing.Point(0, 0);
-            this.PBCliente.Name = "PBCliente";
-            this.PBCliente.Padding = new System.Windows.Forms.Padding(5);
-            this.PBCliente.Size = new System.Drawing.Size(37, 36);
-            this.PBCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBCliente.TabIndex = 0;
-            this.PBCliente.TabStop = false;
-            // 
-            // PBReporteProductos
-            // 
-            this.PBReporteProductos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBReporteProductos.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Productos;
-            this.PBReporteProductos.Location = new System.Drawing.Point(0, 0);
-            this.PBReporteProductos.Name = "PBReporteProductos";
-            this.PBReporteProductos.Padding = new System.Windows.Forms.Padding(5);
-            this.PBReporteProductos.Size = new System.Drawing.Size(36, 36);
-            this.PBReporteProductos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBReporteProductos.TabIndex = 10;
-            this.PBReporteProductos.TabStop = false;
-            // 
-            // PBReporteCliente
-            // 
-            this.PBReporteCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBReporteCliente.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Clientes;
-            this.PBReporteCliente.Location = new System.Drawing.Point(0, 0);
-            this.PBReporteCliente.Name = "PBReporteCliente";
-            this.PBReporteCliente.Padding = new System.Windows.Forms.Padding(5);
-            this.PBReporteCliente.Size = new System.Drawing.Size(36, 36);
-            this.PBReporteCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBReporteCliente.TabIndex = 0;
-            this.PBReporteCliente.TabStop = false;
-            // 
-            // PBReporteVentas
-            // 
-            this.PBReporteVentas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBReporteVentas.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Reportes_Ventas;
-            this.PBReporteVentas.Location = new System.Drawing.Point(0, 0);
-            this.PBReporteVentas.Name = "PBReporteVentas";
-            this.PBReporteVentas.Padding = new System.Windows.Forms.Padding(5);
-            this.PBReporteVentas.Size = new System.Drawing.Size(36, 36);
-            this.PBReporteVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBReporteVentas.TabIndex = 0;
-            this.PBReporteVentas.TabStop = false;
-            // 
-            // PBSalir
-            // 
-            this.PBSalir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBSalir.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Sistema_Salir;
-            this.PBSalir.Location = new System.Drawing.Point(0, 0);
-            this.PBSalir.Name = "PBSalir";
-            this.PBSalir.Padding = new System.Windows.Forms.Padding(5);
-            this.PBSalir.Size = new System.Drawing.Size(36, 36);
-            this.PBSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBSalir.TabIndex = 1;
-            this.PBSalir.TabStop = false;
-            // 
-            // PBPerfil
-            // 
-            this.PBPerfil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PBPerfil.Image = global::DJanel.Muebles.WFApplication.Properties.Resources.Sistema_Perfil;
-            this.PBPerfil.Location = new System.Drawing.Point(0, 0);
-            this.PBPerfil.Name = "PBPerfil";
-            this.PBPerfil.Padding = new System.Windows.Forms.Padding(5);
-            this.PBPerfil.Size = new System.Drawing.Size(36, 36);
-            this.PBPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBPerfil.TabIndex = 10;
-            this.PBPerfil.TabStop = false;
-            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1243,6 +1244,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.FLPanelContainerMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -1250,6 +1252,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Shown += new System.EventHandler(this.FrmHome_Shown);
             this.PrincipalPanelButton.ResumeLayout(false);
             this.PrincipalVentaPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).EndInit();
             this.PrincipalHeader.ResumeLayout(false);
             this.PrincipalHeader.PerformLayout();
             this.Administracion.ResumeLayout(false);
@@ -1257,18 +1260,23 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.AdministracionInventario.ResumeLayout(false);
             this.AdministracionInventarioButton.ResumeLayout(false);
             this.AdministracionInventarioPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).EndInit();
             this.AdministracionEmpleados.ResumeLayout(false);
             this.AdministracionEmpleadosButton.ResumeLayout(false);
             this.AdministracionEmpleadosPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBEmpleados)).EndInit();
             this.AdministracionProveedores.ResumeLayout(false);
             this.AdministracionProveedorButton.ResumeLayout(false);
             this.AdministracionProveedorPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AdministracionProveedoresPictureBox)).EndInit();
             this.AdministracionProductos.ResumeLayout(false);
             this.AdministracionProductosButton.ResumeLayout(false);
             this.AdministracionProductosPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).EndInit();
             this.AdministracionCliente.ResumeLayout(false);
             this.AdministracionClientePanelButton.ResumeLayout(false);
             this.AdministracionClientePanelPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBCliente)).EndInit();
             this.AdministracionHeader.ResumeLayout(false);
             this.AdministracionHeader.PerformLayout();
             this.FLPanelContainerMenu.ResumeLayout(false);
@@ -1280,12 +1288,15 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.ReportesProductos.ResumeLayout(false);
             this.ReportesProductosButton.ResumeLayout(false);
             this.ReportesProductosPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBReporteProductos)).EndInit();
             this.ReportesCompra.ResumeLayout(false);
             this.ReportesCompraButton.ResumeLayout(false);
             this.ReportesCompraPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBReporteCliente)).EndInit();
             this.ReportesVentas.ResumeLayout(false);
             this.ReportesVentasButton.ResumeLayout(false);
             this.ReportesVentasPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBReporteVentas)).EndInit();
             this.ReportesHeader.ResumeLayout(false);
             this.ReportesHeader.PerformLayout();
             this.Sistema.ResumeLayout(false);
@@ -1293,9 +1304,11 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.SistemaSalir.ResumeLayout(false);
             this.SistemaSalirButton.ResumeLayout(false);
             this.SistemaSalirPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBSalir)).EndInit();
             this.SistemaPerfil.ResumeLayout(false);
             this.SistemaPerfilButton.ResumeLayout(false);
             this.SistemaPerfilPictureBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBPerfil)).EndInit();
             this.SistemaHeader.ResumeLayout(false);
             this.SistemaHeader.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1306,17 +1319,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBVenta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBInventario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBEmpleados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AdministracionProveedoresPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBCliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteCliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBReporteVentas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBSalir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PBPerfil)).EndInit();
             this.ResumeLayout(false);
 
         }

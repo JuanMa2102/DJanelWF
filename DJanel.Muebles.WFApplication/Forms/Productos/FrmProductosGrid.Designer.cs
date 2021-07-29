@@ -38,6 +38,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridCheckBoxColumn gridCheckBoxColumn1 = new Syncfusion.WinForms.DataGrid.GridCheckBoxColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductosGrid));
             this.Container = new System.Windows.Forms.Panel();
             this.Body = new System.Windows.Forms.Panel();
             this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
@@ -226,6 +227,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.ClientSize = new System.Drawing.Size(898, 471);
             this.Controls.Add(this.Container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmProductosGrid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProductosGrid";

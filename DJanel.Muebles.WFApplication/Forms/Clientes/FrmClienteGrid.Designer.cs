@@ -35,8 +35,10 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClienteGrid));
             this.Container = new System.Windows.Forms.Panel();
             this.Body = new System.Windows.Forms.Panel();
+            this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.Footer = new System.Windows.Forms.Panel();
             this.UsuarioFLButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.BtnNuevo = new System.Windows.Forms.Button();
@@ -45,14 +47,13 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BusquedaControl = new System.Windows.Forms.TextBox();
             this.LblTitulo = new System.Windows.Forms.Label();
-            this.DataGrid = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.Container.SuspendLayout();
             this.Body.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.Footer.SuspendLayout();
             this.UsuarioFLButtons.SuspendLayout();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // Container
@@ -74,6 +75,47 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.Body.Name = "Body";
             this.Body.Size = new System.Drawing.Size(898, 362);
             this.Body.TabIndex = 2;
+            // 
+            // DataGrid
+            // 
+            this.DataGrid.AccessibleName = "Table";
+            this.DataGrid.AllowEditing = false;
+            this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
+            gridTextColumn1.AllowEditing = false;
+            gridTextColumn1.HeaderText = "IdCliente";
+            gridTextColumn1.MappingName = "IdCliente";
+            gridTextColumn1.Visible = false;
+            gridTextColumn2.AllowEditing = false;
+            gridTextColumn2.AllowResizing = true;
+            gridTextColumn2.HeaderText = "Nombre Completo";
+            gridTextColumn2.MappingName = "NombreCompleto";
+            gridTextColumn3.AllowEditing = false;
+            gridTextColumn3.AllowResizing = true;
+            gridTextColumn3.HeaderText = "Fecha de Nacimiento";
+            gridTextColumn3.MappingName = "Fecha_Nac";
+            gridTextColumn4.AllowEditing = false;
+            gridTextColumn4.AllowResizing = true;
+            gridTextColumn4.HeaderText = "Telefono";
+            gridTextColumn4.MappingName = "Telefono";
+            gridTextColumn5.AllowEditing = false;
+            gridTextColumn5.HeaderText = "Domicilio ";
+            gridTextColumn5.MappingName = "Domicilio";
+            gridTextColumn6.AllowEditing = false;
+            gridTextColumn6.HeaderText = "Apeliido Paterno";
+            gridTextColumn6.MappingName = "Apellido_Pat";
+            this.DataGrid.Columns.Add(gridTextColumn1);
+            this.DataGrid.Columns.Add(gridTextColumn2);
+            this.DataGrid.Columns.Add(gridTextColumn3);
+            this.DataGrid.Columns.Add(gridTextColumn4);
+            this.DataGrid.Columns.Add(gridTextColumn5);
+            this.DataGrid.Columns.Add(gridTextColumn6);
+            this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
+            this.DataGrid.Location = new System.Drawing.Point(0, 0);
+            this.DataGrid.Name = "DataGrid";
+            this.DataGrid.Size = new System.Drawing.Size(898, 362);
+            this.DataGrid.TabIndex = 1;
+            this.DataGrid.Text = "sfDataGrid1";
             // 
             // Footer
             // 
@@ -167,47 +209,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.LblTitulo.TabIndex = 0;
             this.LblTitulo.Text = "Clientes";
             // 
-            // DataGrid
-            // 
-            this.DataGrid.AccessibleName = "Table";
-            this.DataGrid.AllowEditing = false;
-            this.DataGrid.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn1.AllowEditing = false;
-            gridTextColumn1.HeaderText = "IdCliente";
-            gridTextColumn1.MappingName = "IdCliente";
-            gridTextColumn1.Visible = false;
-            gridTextColumn2.AllowEditing = false;
-            gridTextColumn2.AllowResizing = true;
-            gridTextColumn2.HeaderText = "Nombre Completo";
-            gridTextColumn2.MappingName = "NombreCompleto";
-            gridTextColumn3.AllowEditing = false;
-            gridTextColumn3.AllowResizing = true;
-            gridTextColumn3.HeaderText = "Fecha de Nacimiento";
-            gridTextColumn3.MappingName = "Fecha_Nac";
-            gridTextColumn4.AllowEditing = false;
-            gridTextColumn4.AllowResizing = true;
-            gridTextColumn4.HeaderText = "Telefono";
-            gridTextColumn4.MappingName = "Telefono";
-            gridTextColumn5.AllowEditing = false;
-            gridTextColumn5.HeaderText = "Domicilio ";
-            gridTextColumn5.MappingName = "Domicilio";
-            gridTextColumn6.AllowEditing = false;
-            gridTextColumn6.HeaderText = "Apeliido Paterno";
-            gridTextColumn6.MappingName = "Apellido_Pat";
-            this.DataGrid.Columns.Add(gridTextColumn1);
-            this.DataGrid.Columns.Add(gridTextColumn2);
-            this.DataGrid.Columns.Add(gridTextColumn3);
-            this.DataGrid.Columns.Add(gridTextColumn4);
-            this.DataGrid.Columns.Add(gridTextColumn5);
-            this.DataGrid.Columns.Add(gridTextColumn6);
-            this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGrid.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
-            this.DataGrid.Location = new System.Drawing.Point(0, 0);
-            this.DataGrid.Name = "DataGrid";
-            this.DataGrid.Size = new System.Drawing.Size(898, 362);
-            this.DataGrid.TabIndex = 1;
-            this.DataGrid.Text = "sfDataGrid1";
-            // 
             // FrmClienteGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,18 +216,19 @@ namespace DJanel.Muebles.WFApplication.Forms.Clientes
             this.ClientSize = new System.Drawing.Size(898, 471);
             this.Controls.Add(this.Container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmClienteGrid";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProductosGrid";
             this.Shown += new System.EventHandler(this.FrmClienteGrid_Shown);
             this.Container.ResumeLayout(false);
             this.Body.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.Footer.ResumeLayout(false);
             this.UsuarioFLButtons.ResumeLayout(false);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
