@@ -30,20 +30,22 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn9 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn10 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn11 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn12 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn13 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn14 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn15 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn16 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn1 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn2 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn3 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.UsuarioGridPanel = new System.Windows.Forms.Panel();
             this.GridVentaPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ListaControl = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.AccionesGridPanel = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.BtnPagar = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.PagoControl = new Syncfusion.WinForms.Input.SfNumericTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -56,7 +58,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.label6 = new System.Windows.Forms.Label();
             this.PrefixCambio = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnPagar = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.BtnBuscar = new System.Windows.Forms.Button();
@@ -89,13 +90,13 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.label2 = new System.Windows.Forms.Label();
             this.ClaveBusquedaControl = new System.Windows.Forms.TextBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panel11 = new System.Windows.Forms.Panel();
             this.UsuarioGridPanel.SuspendLayout();
             this.GridVentaPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ListaControl)).BeginInit();
             this.AccionesGridPanel.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.panel7.SuspendLayout();
             this.AccionesGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductoEliminar)).BeginInit();
@@ -107,7 +108,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             ((System.ComponentModel.ISupportInitialize)(this.BusquedaCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BusquedaRapida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // UsuarioGridPanel
@@ -149,50 +149,50 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.ListaControl.AccessibleName = "Table";
             this.ListaControl.AllowEditing = false;
             this.ListaControl.AutoSizeColumnsMode = Syncfusion.WinForms.DataGrid.Enums.AutoSizeColumnsMode.Fill;
-            gridTextColumn9.AllowEditing = false;
-            gridTextColumn9.HeaderText = "IdProducto";
-            gridTextColumn9.MappingName = "IdProducto";
-            gridTextColumn9.Visible = false;
-            gridTextColumn10.AllowEditing = false;
-            gridTextColumn10.AllowResizing = true;
-            gridTextColumn10.HeaderText = "Nombre";
-            gridTextColumn10.MappingName = "Producto.Nombre";
-            gridTextColumn11.AllowEditing = false;
-            gridTextColumn11.HeaderText = "Marca";
-            gridTextColumn11.MappingName = "Producto.Marca";
-            gridTextColumn12.AllowEditing = false;
-            gridTextColumn12.HeaderText = "Modelo";
-            gridTextColumn12.MappingName = "Producto.Modelo";
-            gridTextColumn13.AllowEditing = false;
-            gridTextColumn13.HeaderText = "Clave";
-            gridTextColumn13.MappingName = "Producto.ClaveBusqueda";
-            gridTextColumn14.AllowEditing = false;
-            gridTextColumn14.CellStyle.Font.Bold = true;
-            gridTextColumn14.CellStyle.TextColor = System.Drawing.Color.ForestGreen;
-            gridTextColumn14.Format = "C2";
-            gridTextColumn14.HeaderText = "Precio";
-            gridTextColumn14.MappingName = "Precio";
-            gridTextColumn15.AllowEditing = false;
-            gridTextColumn15.CellStyle.Font.Bold = true;
-            gridTextColumn15.CellStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
-            gridTextColumn15.HeaderText = "Cantidad";
-            gridTextColumn15.MappingName = "Cantidad";
-            gridTextColumn16.AllowEditing = false;
-            gridTextColumn16.CellStyle.BackColor = System.Drawing.Color.White;
-            gridTextColumn16.CellStyle.Font.Bold = true;
-            gridTextColumn16.CellStyle.Font.Facename = "Microsoft Sans Serif";
-            gridTextColumn16.CellStyle.TextColor = System.Drawing.Color.ForestGreen;
-            gridTextColumn16.Format = "C2";
-            gridTextColumn16.HeaderText = "Total";
-            gridTextColumn16.MappingName = "Total";
-            this.ListaControl.Columns.Add(gridTextColumn9);
-            this.ListaControl.Columns.Add(gridTextColumn10);
-            this.ListaControl.Columns.Add(gridTextColumn11);
-            this.ListaControl.Columns.Add(gridTextColumn12);
-            this.ListaControl.Columns.Add(gridTextColumn13);
-            this.ListaControl.Columns.Add(gridTextColumn14);
-            this.ListaControl.Columns.Add(gridTextColumn15);
-            this.ListaControl.Columns.Add(gridTextColumn16);
+            gridTextColumn1.AllowEditing = false;
+            gridTextColumn1.HeaderText = "IdProducto";
+            gridTextColumn1.MappingName = "IdProducto";
+            gridTextColumn1.Visible = false;
+            gridTextColumn2.AllowEditing = false;
+            gridTextColumn2.AllowResizing = true;
+            gridTextColumn2.HeaderText = "Nombre";
+            gridTextColumn2.MappingName = "Producto.Nombre";
+            gridTextColumn3.AllowEditing = false;
+            gridTextColumn3.HeaderText = "Marca";
+            gridTextColumn3.MappingName = "Producto.Marca";
+            gridTextColumn4.AllowEditing = false;
+            gridTextColumn4.HeaderText = "Modelo";
+            gridTextColumn4.MappingName = "Producto.Modelo";
+            gridTextColumn5.AllowEditing = false;
+            gridTextColumn5.HeaderText = "Clave";
+            gridTextColumn5.MappingName = "Producto.ClaveBusqueda";
+            gridTextColumn6.AllowEditing = false;
+            gridTextColumn6.CellStyle.Font.Bold = true;
+            gridTextColumn6.CellStyle.TextColor = System.Drawing.Color.ForestGreen;
+            gridTextColumn6.Format = "C2";
+            gridTextColumn6.HeaderText = "Precio";
+            gridTextColumn6.MappingName = "Precio";
+            gridTextColumn7.AllowEditing = false;
+            gridTextColumn7.CellStyle.Font.Bold = true;
+            gridTextColumn7.CellStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(74)))), ((int)(((byte)(105)))));
+            gridTextColumn7.HeaderText = "Cantidad";
+            gridTextColumn7.MappingName = "Cantidad";
+            gridTextColumn8.AllowEditing = false;
+            gridTextColumn8.CellStyle.BackColor = System.Drawing.Color.White;
+            gridTextColumn8.CellStyle.Font.Bold = true;
+            gridTextColumn8.CellStyle.Font.Facename = "Microsoft Sans Serif";
+            gridTextColumn8.CellStyle.TextColor = System.Drawing.Color.ForestGreen;
+            gridTextColumn8.Format = "C2";
+            gridTextColumn8.HeaderText = "Total";
+            gridTextColumn8.MappingName = "Total";
+            this.ListaControl.Columns.Add(gridTextColumn1);
+            this.ListaControl.Columns.Add(gridTextColumn2);
+            this.ListaControl.Columns.Add(gridTextColumn3);
+            this.ListaControl.Columns.Add(gridTextColumn4);
+            this.ListaControl.Columns.Add(gridTextColumn5);
+            this.ListaControl.Columns.Add(gridTextColumn6);
+            this.ListaControl.Columns.Add(gridTextColumn7);
+            this.ListaControl.Columns.Add(gridTextColumn8);
             this.ListaControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListaControl.EditorSelectionBehavior = Syncfusion.WinForms.DataGrid.Enums.EditorSelectionBehavior.SelectAll;
             this.ListaControl.Location = new System.Drawing.Point(3, 18);
@@ -237,6 +237,29 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acciones";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.BtnPagar);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel11.Location = new System.Drawing.Point(3, 546);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(199, 50);
+            this.panel11.TabIndex = 72;
+            // 
+            // BtnPagar
+            // 
+            this.BtnPagar.BackColor = System.Drawing.Color.ForestGreen;
+            this.BtnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnPagar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnPagar.Location = new System.Drawing.Point(10, 3);
+            this.BtnPagar.Name = "BtnPagar";
+            this.BtnPagar.Size = new System.Drawing.Size(173, 43);
+            this.BtnPagar.TabIndex = 63;
+            this.BtnPagar.Text = "Pagar";
+            this.BtnPagar.UseVisualStyleBackColor = false;
+            this.BtnPagar.Click += new System.EventHandler(this.BtnPagar_Click);
             // 
             // panel7
             // 
@@ -341,6 +364,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(173, 2);
             this.panel9.TabIndex = 60;
+            this.panel9.Visible = false;
             // 
             // label6
             // 
@@ -352,6 +376,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.label6.Size = new System.Drawing.Size(55, 16);
             this.label6.TabIndex = 61;
             this.label6.Text = "Cambio";
+            this.label6.Visible = false;
             // 
             // PrefixCambio
             // 
@@ -364,6 +389,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.PrefixCambio.Size = new System.Drawing.Size(15, 16);
             this.PrefixCambio.TabIndex = 62;
             this.PrefixCambio.Text = "$";
+            this.PrefixCambio.Visible = false;
             // 
             // label4
             // 
@@ -374,20 +400,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.label4.Size = new System.Drawing.Size(56, 19);
             this.label4.TabIndex = 65;
             this.label4.Text = "Pagar";
-            // 
-            // BtnPagar
-            // 
-            this.BtnPagar.BackColor = System.Drawing.Color.ForestGreen;
-            this.BtnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnPagar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnPagar.Location = new System.Drawing.Point(10, 3);
-            this.BtnPagar.Name = "BtnPagar";
-            this.BtnPagar.Size = new System.Drawing.Size(173, 43);
-            this.BtnPagar.TabIndex = 63;
-            this.BtnPagar.Text = "Pagar";
-            this.BtnPagar.UseVisualStyleBackColor = false;
-            this.BtnPagar.Click += new System.EventHandler(this.BtnPagar_Click);
             // 
             // label12
             // 
@@ -736,15 +748,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.errorProvider.BlinkRate = 50;
             this.errorProvider.ContainerControl = this;
             // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.BtnPagar);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(3, 546);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(199, 50);
-            this.panel11.TabIndex = 72;
-            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -763,6 +766,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             this.AccionesGridPanel.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel11.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.AccionesGrid.ResumeLayout(false);
@@ -776,7 +780,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Ventas
             ((System.ComponentModel.ISupportInitialize)(this.BusquedaCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BusquedaRapida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
