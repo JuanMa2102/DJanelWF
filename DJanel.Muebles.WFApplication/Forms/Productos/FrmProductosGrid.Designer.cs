@@ -37,7 +37,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridCheckBoxColumn gridCheckBoxColumn1 = new Syncfusion.WinForms.DataGrid.GridCheckBoxColumn();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductosGrid));
             this.Container = new System.Windows.Forms.Panel();
             this.Body = new System.Windows.Forms.Panel();
@@ -108,8 +107,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             gridTextColumn7.MappingName = "Modelo";
             gridTextColumn8.HeaderText = "Clave";
             gridTextColumn8.MappingName = "ClaveBusqueda";
-            gridCheckBoxColumn1.HeaderText = "Seleccion";
-            gridCheckBoxColumn1.MappingName = "Seleccion";
             this.DataGrid.Columns.Add(gridTextColumn1);
             this.DataGrid.Columns.Add(gridTextColumn2);
             this.DataGrid.Columns.Add(gridTextColumn3);
@@ -118,7 +115,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Productos
             this.DataGrid.Columns.Add(gridTextColumn6);
             this.DataGrid.Columns.Add(gridTextColumn7);
             this.DataGrid.Columns.Add(gridTextColumn8);
-            this.DataGrid.Columns.Add(gridCheckBoxColumn1);
             this.DataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGrid.Location = new System.Drawing.Point(0, 0);
             this.DataGrid.Name = "DataGrid";

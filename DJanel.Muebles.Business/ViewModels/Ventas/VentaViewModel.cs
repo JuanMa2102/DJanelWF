@@ -198,6 +198,8 @@ namespace DJanel.Muebles.Business.ViewModels.Ventas
                     u.Total = u.Cantidad * u.Precio;
                     return u;
                 }).ToList();
+
+                GetTotales();
             }
             catch (Exception)
             {

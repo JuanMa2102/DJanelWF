@@ -46,6 +46,8 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
             this.panel4 = new System.Windows.Forms.Panel();
             this.LblError = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.LblEmpresa = new System.Windows.Forms.Label();
+            this.LblVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -203,12 +205,39 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // LblEmpresa
+            // 
+            this.LblEmpresa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmpresa.Location = new System.Drawing.Point(400, 432);
+            this.LblEmpresa.Name = "LblEmpresa";
+            this.LblEmpresa.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LblEmpresa.Size = new System.Drawing.Size(392, 23);
+            this.LblEmpresa.TabIndex = 12;
+            this.LblEmpresa.Text = "Todos los derechos reservados";
+            this.LblEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LblEmpresa.Visible = false;
+            this.LblEmpresa.Click += new System.EventHandler(this.lblversion_Click);
+            // 
+            // LblVersion
+            // 
+            this.LblVersion.AutoSize = true;
+            this.LblVersion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVersion.Location = new System.Drawing.Point(750, 415);
+            this.LblVersion.Name = "LblVersion";
+            this.LblVersion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LblVersion.Size = new System.Drawing.Size(45, 17);
+            this.LblVersion.TabIndex = 13;
+            this.LblVersion.Text = "label4";
+            this.LblVersion.Visible = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblVersion);
+            this.Controls.Add(this.LblEmpresa);
             this.Controls.Add(this.LblError);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -252,5 +281,7 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label LblError;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label LblEmpresa;
+        private System.Windows.Forms.Label LblVersion;
     }
 }

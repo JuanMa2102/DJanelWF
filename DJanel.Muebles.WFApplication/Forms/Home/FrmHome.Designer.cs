@@ -1247,7 +1247,6 @@ namespace DJanel.Muebles.WFApplication.Forms.Home
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Shown += new System.EventHandler(this.FrmHome_Shown);
             this.PrincipalPanelButton.ResumeLayout(false);

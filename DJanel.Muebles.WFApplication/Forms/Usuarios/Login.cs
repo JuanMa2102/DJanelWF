@@ -156,11 +156,12 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
             try
             {
                 IniciarBinding();
-                //this.LblVersionSistema.Text = "Version 1.0";
+                //this.LblVersion.Text = "Version 1.0.0";
+                //this.LblEmpresa.Text = "Impulsado por ITTG - Todos los derechos reservados " + DateTime.Now.Year.ToString();
                 //this.LblDerechoReservado.Text = "Impulsado por CID Fares® - Todos los derechos reservados " + DateTime.Now.Year.ToString();
-                UserAccountControl.Text = "admin";
-                UserPasswordControl.Text = "123456";
-                BtnLogin_Click(this,e);
+                //UserAccountControl.Text = "admin";
+                //UserPasswordControl.Text = "123456";
+                //BtnLogin_Click(this,e);
             }
             catch (Exception)
             {
@@ -169,5 +170,10 @@ namespace DJanel.Muebles.WFApplication.Forms.Usuarios
         }
 
         #endregion
+
+        private void lblversion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
